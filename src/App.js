@@ -32,6 +32,7 @@ import sec6img from './img/sec6img.png';
 import dot from './img/dot.png'
 import sec7img1 from './img/sec7img1.png'
 import sec7img2 from './img/sec7img2.png'
+import sec8img1 from './img/sec8img1.png'
 
 
 function Image(props) {
@@ -91,6 +92,7 @@ function App() {
         </style>
 
       </Helmet>
+
       <div className='sec1'>
         <div className='container' style={{ display: 'flex', placeContent: 'space-between', padding: '40px 0', placeSelf: 'center', textAlign: 'center' }}>
           <div className='col-lg-3' id="logo">TheCoffeeCanvas</div>
@@ -130,7 +132,7 @@ function App() {
 
       <div className='sec3'>
         <div className='container'>
-          <div style={{ display: 'flex', flexWrap: 'wrap', rowGap:'60px' , placeContent: 'space-between', justifyContent: 'center', alignSelf: 'center', padding: '100px 0' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', rowGap: '60px', placeContent: 'space-between', justifyContent: 'center', alignSelf: 'center', padding: '100px 0' }}>
             <div className='col-lg-3 col-md-5 col-sm-12 sec2box'>
               <img src={coffeecup} className='sec2img' />
               <h3 className='sec2_title'>Awesome Aroma</h3>
@@ -160,7 +162,7 @@ function App() {
       </div>
 
       <div className='sec4 section'>
-        <div className='container' style={{ display: 'flex', gap: '20px', flexWrap: 'wrap',rowGap:'60px' }}>
+        <div className='container' style={{ display: 'flex', flexWrap: 'wrap', rowGap: '60px' }}>
           <div className='col-lg-6 col-md-6 col-sm-12' style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
             <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
               <img src={line} style={{ width: '80px' }} />
@@ -227,7 +229,7 @@ function App() {
       </div>
 
       <div className='sec6 section'>
-        <div className='container' style={{ display: 'flex', flexWrap: 'wrap', placeContent: 'space-around',rowGap:'50px' }}>
+        <div className='container' style={{ display: 'flex', flexWrap: 'wrap', placeContent: 'space-around', rowGap: '50px' }}>
           <div className='col-lg-7 col-md-7 col-sm-12' style={{ display: 'flex', flexDirection: 'column', rowGap: '30px' }}>
             <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
               <img src={line} style={{ width: '80px' }} />
@@ -237,7 +239,7 @@ function App() {
             <p id='sec4_desc'>Don't miss out on the opportunity to elevate your daily coffee ritual. Download the Coffee Subscription App today and savor the convenience, the flavors, and the artistry that The Coffee Canvas has to offer. It's coffee, your way, and it's just a tap away.</p>
             <button id='subscribe'>Subscribe</button>
           </div>
-          <div className='col-lg-3 col-md-3 col-sm-12' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <div className='col-lg-3 col-md-5 col-sm-12' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             <img src={sec6img} style={{ width: '100%' }} />
             <div style={{ display: 'flex', gap: '30px' }}>
               <img src={dot} id="dot" />
@@ -250,15 +252,15 @@ function App() {
 
       <div className='sec7 section' style={{ display: 'flex', flexWrap: 'wrap', gap: '50px' }}>
         <div className='col-lg-7 col-md-7 col-sm-12 sec7col1' style={{ display: 'flex', paddingLeft: '0px' }}>
-          <div className='col-lg-6 col-md-6' id='sec7subdiv1' style={{ display: 'flex', flexDirection: 'column', gap: '20px'}}>
-            <img src={sec7img1} id="sec7img1"/>
+          <div className='col-lg-6 col-md-6' id='sec7subdiv1' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+            <img src={sec7img1} id="sec7img1" />
             <div className='dotdiv'>
               <img src={dot} id="dot" />
-              <p id="sec6sweet">Sweet Black Coffee</p> 
+              <p id="sec6sweet">Sweet Black Coffee</p>
             </div>
           </div>
-          <div className='col-lg-6 col-md-6' id='sec7subdiv2'  style={{ display: 'flex', flexDirection: 'column', gap: '20px'}}>
-            <img src={sec7img2} id="sec7img2"/>
+          <div className='col-lg-6 col-md-6' id='sec7subdiv2' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+            <img src={sec7img2} id="sec7img2" />
             <div className='dotdiv'>
               <img src={dot} id="dot" />
               <p id="sec6sweet">Mochaccino Cream Coffee</p>
@@ -280,6 +282,43 @@ function App() {
         </div>
       </div>
 
+      <div className='sec8 section'>
+        <div className='container' style={{ display: 'flex', flexDirection: 'column', gap: '30px', alignItems:'center'}}>
+          <p>Community & Creativity</p>
+          <p id='sec4_title'>Where Art  Meets Coffee Culture</p>
+          <p>The Coffee Canvas is more than a coffee house; it's a vibrant gallery of creativity and connection. Open mic nights and collaborative events transform our space into a haven for inspiration. Here, the scent of fresh coffee mingles with the aroma of artistic expression, making each visit a journey through art and flavour.</p>
+        <div className='col-lg-2 col-md-2 col-sm-12' style={{ display: 'flex', placeContent: 'space-between' }}>
+          <p>All</p>
+          <p>Mumbai</p>
+          <p>Delhi</p>
+        </div>
+        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+          <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
+            <img src={sec8img1} style={{ width: '100%' }} />
+          </div>
+          <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
+            <img src={sec8img1} style={{ width: '100%' }} />
+          </div>
+          <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
+            <img src={sec8img1} style={{ width: '100%' }} />
+          </div>
+          <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
+            <img src={sec8img1} style={{ width: '100%' }} />
+          </div>
+          <div className='serc8col col-lg-4 col-md-6 col-sm-12'>
+            <img src={sec8img1} style={{ width: '100%' }} />
+          </div>
+          <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
+            <img src={sec8img1} style={{ width: '100%' }} />
+          </div>
+          <div className='serc8col col-lg-4 col-md-6 col-sm-12'>
+            <img src={sec8img1} style={{ width: '100%' }} />
+          </div>
+          <div>
+          </div>
+        </div>
+        </div>
+      </div>
     </div>
   );
 }
