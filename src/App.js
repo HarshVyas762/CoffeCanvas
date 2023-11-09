@@ -21,13 +21,18 @@ import img7 from './img/img7.jpg';
 import img8 from './img/img8.jpg';
 import coffeecup from './img/coffee-cup 1.png';
 import badge from './img/quality 1.png';
-import beans from './img/coffee-beans 1.png'
-import brewd from './img/coffee 1.png'
-import line from './img/Rectangle 74.svg'
-import artistic from './img/icon-2_1920X 1 (1).png'
-import cultural from './img/icon-4_1920X 1.png'
-import sec3img from './img/sec3img.png'
-import sec5img from './img/sec5img.png'
+import beans from './img/coffee-beans 1.png';
+import brewd from './img/coffee 1.png';
+import line from './img/Rectangle 74.svg';
+import artistic from './img/icon-2_1920X 1 (1).png';
+import cultural from './img/icon-4_1920X 1.png';
+import sec3img from './img/sec3img.png';
+import sec5img from './img/sec5img.png';
+import sec6img from './img/sec6img.png';
+import dot from './img/dot.png'
+import sec7img1 from './img/sec7img1.png'
+import sec7img2 from './img/sec7img2.png'
+
 
 function Image(props) {
   const ref = useRef()
@@ -125,7 +130,7 @@ function App() {
 
       <div className='sec3'>
         <div className='container'>
-          <div style={{ display: 'flex', flexWrap: 'wrap', placeContent: 'space-between', justifyContent: 'center', alignSelf: 'center', padding: '100px 0' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', rowGap:'60px' , placeContent: 'space-between', justifyContent: 'center', alignSelf: 'center', padding: '100px 0' }}>
             <div className='col-lg-3 col-md-5 col-sm-12 sec2box'>
               <img src={coffeecup} className='sec2img' />
               <h3 className='sec2_title'>Awesome Aroma</h3>
@@ -155,7 +160,7 @@ function App() {
       </div>
 
       <div className='sec4 section'>
-        <div className='container' style={{ display: 'flex',gap:'20px', flexWrap: 'wrap' }}>
+        <div className='container' style={{ display: 'flex', gap: '20px', flexWrap: 'wrap',rowGap:'60px' }}>
           <div className='col-lg-6 col-md-6 col-sm-12' style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
             <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
               <img src={line} style={{ width: '80px' }} />
@@ -177,20 +182,20 @@ function App() {
             </div>
           </div>
           <div className='col-lg-5 col-md-5 col-sm-12'>
-            <img src={sec3img}/>
+            <img src={sec3img} id="sec3img" />
           </div>
         </div>
       </div>
 
       <div className='sec5 section'>
-        <div style={{ display: 'flex', placeContent:'space-between', rowGap:'20px', flexWrap: 'wrap' }}>
-          <div className='col-lg-5 col-md-5 col-sm-12' style={{paddingLeft:'0px'}}>
-          <img src={sec5img} style={{width:'504px'}}/>
+        <div style={{ display: 'flex', placeContent: 'space-between', rowGap: '60px', flexWrap: 'wrap' }}>
+          <div className='col-lg-5 col-md-5 col-sm-12' id="sec5col1">
+            <img src={sec5img} id="sec5img" />
           </div>
-          <div className='col-lg-7 col-md-7 col-sm-12' style={{ display: 'flex', flexDirection: 'column', gap: '28px',paddingRight:'0px' }}>
+          <div className='col-lg-7 col-md-7 col-sm-12' style={{ display: 'flex', flexDirection: 'column', gap: '28px', paddingRight: '0px' }}>
             <p id='sec4_title'>Artistry in Every Cup</p>
             <p id='sec4_desc'>At The Coffee Canvas, we're not just making coffee; we're painting a masterpiece. Our beans are carefully sourced from around the globe, each telling its own story through its unique flavors. Like a skilled artist, our baristas use their expertise to create a symphony of flavors in every cup.</p>
-            <div style={{ display: 'flex', rowGap: '30px', flexWrap: 'wrap', marginTop:'60px' }}>
+            <div style={{ display: 'flex', rowGap: '50px', flexWrap: 'wrap', marginTop: '40px' }}>
               <div className='col-lg-6 col-md-6 col-sm-12' style={{ display: 'flex', gap: '20px' }}>
                 <div style={{ alignSelf: 'center' }}><img src={artistic}></img></div>
                 <div><h5 id='sec5_boxtitle'>World’s Best Beans</h5>
@@ -222,16 +227,57 @@ function App() {
       </div>
 
       <div className='sec6 section'>
-        <div className='container'>
-          <div style={{display:'flex', flexDirection:'column'}}>
-          <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
+        <div className='container' style={{ display: 'flex', flexWrap: 'wrap', placeContent: 'space-around',rowGap:'50px' }}>
+          <div className='col-lg-7 col-md-7 col-sm-12' style={{ display: 'flex', flexDirection: 'column', rowGap: '30px' }}>
+            <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
               <img src={line} style={{ width: '80px' }} />
               <span id="abouttext">THE MOBILE APP</span>
             </div>
+            <p id='sec4_title'>Never Run Out of Your Favorite Blend</p>
+            <p id='sec4_desc'>Don't miss out on the opportunity to elevate your daily coffee ritual. Download the Coffee Subscription App today and savor the convenience, the flavors, and the artistry that The Coffee Canvas has to offer. It's coffee, your way, and it's just a tap away.</p>
+            <button id='subscribe'>Subscribe</button>
           </div>
-          <div></div>
+          <div className='col-lg-3 col-md-3 col-sm-12' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+            <img src={sec6img} style={{ width: '100%' }} />
+            <div style={{ display: 'flex', gap: '30px' }}>
+              <img src={dot} id="dot" />
+              <p id="sec6sweet">Sweet Black Coffee</p>
+            </div>
+          </div>
         </div>
 
+      </div>
+
+      <div className='sec7 section' style={{ display: 'flex', flexWrap: 'wrap', gap: '50px' }}>
+        <div className='col-lg-7 col-md-7 col-sm-12 sec7col1' style={{ display: 'flex', paddingLeft: '0px' }}>
+          <div className='col-lg-6 col-md-6' id='sec7subdiv1' style={{ display: 'flex', flexDirection: 'column', gap: '20px'}}>
+            <img src={sec7img1} id="sec7img1"/>
+            <div className='dotdiv'>
+              <img src={dot} id="dot" />
+              <p id="sec6sweet">Sweet Black Coffee</p> 
+            </div>
+          </div>
+          <div className='col-lg-6 col-md-6' id='sec7subdiv2'  style={{ display: 'flex', flexDirection: 'column', gap: '20px'}}>
+            <img src={sec7img2} id="sec7img2"/>
+            <div className='dotdiv'>
+              <img src={dot} id="dot" />
+              <p id="sec6sweet">Mochaccino Cream Coffee</p>
+            </div>
+          </div>
+
+        </div>
+        <div className='col-lg-4 col-md-4 col-sm-12' style={{ display: 'flex', flexDirection: 'column', gap: '30px', paddingTop: '60px' }}>
+          <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
+            <img src={line} style={{ width: '80px' }} />
+            <span id="abouttext">BEST MENU</span>
+          </div>
+          <p id='sec4_title'>Flavorful Artistry to Satisfy Your Senses</p>
+          <p id='sec4_desc'>Our menu is a canvas of flavor, featuring handcrafted coffees, teas, cold beverages, and delectable pastries. Whether it's breakfast, a midday pick-me-up, or a leisurely afternoon, we have delights for every palate.</p>
+          <div style={{ display: 'flex', placeContent: 'space-between' }}>
+            <button id="more_menu">More Menu</button>
+            <p id="sec7check" style={{ alignSelf: 'center', fontFamily: 'Popins', fontWeight: '100', color: '#49545A' }}>Check your survey <i class="arrow up"></i></p>
+          </div>
+        </div>
       </div>
 
     </div>
