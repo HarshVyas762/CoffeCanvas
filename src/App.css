@@ -62,7 +62,7 @@ p {
     display: none;
   }
 
-  .menu-link{
+  .menu-link {
     display: none !important;
   }
 
@@ -128,8 +128,8 @@ p {
 
 /* SEC4 */
 
-.sec4.container{
-  gap:20px;
+.sec4.container {
+  gap: 20px;
 }
 
 #sec4_title {
@@ -213,7 +213,7 @@ p {
   width: 504px;
 }
 
-#sec5col1{
+#sec5col1 {
   padding-left: 0px;
 }
 
@@ -252,7 +252,7 @@ p {
   height: 15px;
 }
 
-.dotdiv{
+.dotdiv {
   display: flex;
   gap: 30px;
 }
@@ -286,53 +286,130 @@ p {
   text-align: left;
 }
 
-#sec7img1{
+#sec7img1 {
   width: 100%;
   height: 500px;
 }
 
-#sec7img2{
-  width:100%;
+#sec7img2 {
+  width: 100%;
   height: 500px;
 }
 
-#sec7subdiv1{
+#sec7subdiv1 {
   padding-left: 0px;
 }
 
-#sec7subdiv2{
-padding-right: 0px;
+#sec7subdiv2 {
+  padding-right: 0px;
 }
 
 /* SEC7 */
 
 /* SEC8 */
 
-  .sec8{
-    background: url('./img/sec8bg.png');
-  }
+.sec8 {
+  background: url('./img/sec8bg.png');
+}
 
 /* SEC8 */
+
+/* SEC9 */
+
+.sec9{
+  background: url('./img/sec9bg.png');
+  height: 650px;
+  border-bottom: 100px solid white;
+}
+
+#carouselExampleFade{
+  /* margin-top: clamp(30px, 50%,100px); */
+  width: 100%;
+  gap: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testbox1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+#testdesc {
+  color: black;
+  font-family: Raleway;
+  font-size: 24px;
+  width: 350px;
+}
+
+#testname {
+  color: #606F76;
+}
+
+#name{
+  color: black;
+}
+
+#test1{
+  width: 100%;
+  height:430px;
+}
+
+.carousel-control-next-icon {
+  background: url('./img/next.svg') !important;
+  background-repeat: no-repeat !important;
+  width: 63px !important;
+  height: 63px !important;
+}
+
+.carousel-control-prev-icon {
+  background: url('./img/prev.png') !important;
+  background-repeat: no-repeat !important;
+  width: 63px !important;
+  height: 63px !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  top: 36em !important;
+  width: 75em !important;
+}
+
+.carousel-control-next{
+  right: 2vw;
+}
+
+.carousel-control-prev{
+  left: -2vw;
+}
+
+.sec9col2{
+  margin-top: 100px;
+}
+
+/* SEC9 */
 
 /* 1100px to 800px */
 
 @media (min-width:800px) and (max-width:1100px) {
 
-  #sec5img{
+  #sec5img {
     width: 100%;
   }
 
-  #sec3img{
-      width: 100%;
+  #sec3img {
+    width: 100%;
   }
 
-  .sec4 .container{
+
+  .sec4 .container {
     place-content: space-between;
   }
 
   #more_menu {
     font-size: 14px;
-}
+  }
 }
 
 /* 1100px to 800px */
@@ -349,92 +426,92 @@ padding-right: 0px;
     width: -webkit-fill-available;
   }
 
-.sec6 .container{
-  flex-direction: column-reverse;
-}
+  .sec6 .container {
+    flex-direction: column-reverse;
+  }
 
-#sec7img1{
-  height: 250px;
-}
+  #sec7img1 {
+    height: 250px;
+  }
 
-#sec7img2{
-  height: 250px;
-}
+  #sec7img2 {
+    height: 250px;
+  }
 
-#sec7subdiv1{
-  padding-left: 15px;
-  padding-right: 0px;
-}
+  #sec7subdiv1 {
+    padding-left: 15px;
+    padding-right: 0px;
+  }
 
-#sec7subdiv2{
-  padding-right: 0px;
-  padding-left: 0px;
-}
+  #sec7subdiv2 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 
-.sec7col1{
-  gap: 15px;
-}
+  .sec7col1 {
+    gap: 15px;
+  }
 
-.dotdiv{
-  gap:10px;
-}
+  .dotdiv {
+    gap: 10px;
+  }
 
-#dot {
-  width: 6px;
-  align-self: center;
-  height: 6px;
-}
+  #dot {
+    width: 6px;
+    align-self: center;
+    height: 6px;
+  }
 
-#sec6sweet {
-  font-size: 14px;
-}
+  #sec6sweet {
+    font-size: 14px;
+  }
 
-#sec4_title{
-  font-size: 30px;
-}
+  #sec4_title {
+    font-size: 30px;
+  }
 
-#sec4_desc {
-  font-size: 14px;
-}
+  #sec4_desc {
+    font-size: 14px;
+  }
 
-#abouttext {
-  font-size: 17px;
-}
+  #abouttext {
+    font-size: 17px;
+  }
 
-#more_menu {
-  font-size: 15px;
-  padding: 3px 30px;
-}
+  #more_menu {
+    font-size: 15px;
+    padding: 3px 30px;
+  }
 
-#subscribe {
-  font-size: 15px;
-  padding: 3px 30px;
-}
+  #subscribe {
+    font-size: 15px;
+    padding: 3px 30px;
+  }
 
-#sec5col1{
-  padding-left: 30px;
-  padding-right: 15px;
-}
+  #sec5col1 {
+    padding-left: 30px;
+    padding-right: 15px;
+  }
 
-#sec4_boxtitle {
-  font-size: 22px;
-}
+  #sec4_boxtitle {
+    font-size: 22px;
+  }
 
-.sec2_title{
-  font-size: 22px;
-}
+  .sec2_title {
+    font-size: 22px;
+  }
 
-.sec2_desc{
-  font-size:14px;
-}
+  .sec2_desc {
+    font-size: 14px;
+  }
 
-.sec2img {
-  width: 40px;
-}
+  .sec2img {
+    width: 40px;
+  }
 
-.sec4 .container{
-  flex-direction: column-reverse;
-}
+  .sec4 .container {
+    flex-direction: column-reverse;
+  }
 
 }
 

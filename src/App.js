@@ -38,6 +38,10 @@ import sec8img3 from './img/sec8img3.png'
 import sec8img4 from './img/sec8img4.png'
 import sec8img5 from './img/sec8img5.png'
 import sec8img6 from './img/sec8img6.png'
+import test1 from './img/test1.png'
+import test2 from './img/test2.jpg'
+import test3 from './img/test3.jpg'
+import quotes from './img/quotes.svg'
 
 function Image(props) {
   const ref = useRef()
@@ -88,6 +92,8 @@ function App() {
       <Helmet>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
         <link href="https://fonts.cdnfonts.com/css/rancho" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
         <link href="https://fonts.cdnfonts.com/css/raleway-5" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta charset="utf-8" />
@@ -286,38 +292,113 @@ function App() {
         </div>
       </div>
 
-      <div className='sec8 section' style={{padding:'100px 0px'}}>
-        <div className='container' style={{ display: 'flex', flexDirection: 'column', gap: '30px', alignItems:'center'}}>
+      <div className='sec8 section' style={{ padding: '100px 0px' }}>
+        <div className='container' style={{ display: 'flex', flexDirection: 'column', gap: '30px', alignItems: 'center' }}>
           <span id="abouttext">Community & Creativity</span>
           <p id='sec4_title'>Where Art  Meets Coffee Culture</p>
           <p id='sec4_desc'>The Coffee Canvas is more than a coffee house; it's a vibrant gallery of creativity and connection. Open mic nights and collaborative events transform our space into a haven for inspiration. Here, the scent of fresh coffee mingles with the aroma of artistic expression, making each visit a journey through art and flavour.</p>
-        <div className='col-lg-2 col-md-2 col-sm-12' style={{ display: 'flex', placeContent: 'space-between', fontSize: '20px' }}>
-          <p>All</p>
-          <p>Mumbai</p>
-          <p>Delhi</p>
+          <div className='col-lg-2 col-md-2 col-sm-12' style={{ display: 'flex', placeContent: 'space-between', fontSize: '20px' }}>
+            <p>All</p>
+            <p>Mumbai</p>
+            <p>Delhi</p>
+          </div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', rowGap: '30px' }}>
+            <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
+              <img src={sec8img1} style={{ width: '100%' }} />
+            </div>
+            <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
+              <img src={sec8img2} style={{ width: '100%' }} />
+            </div>
+            <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
+              <img src={sec8img3} style={{ width: '100%' }} />
+            </div>
+            <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
+              <img src={sec8img4} style={{ width: '100%' }} />
+            </div>
+            <div className='serc8col col-lg-4 col-md-6 col-sm-12'>
+              <img src={sec8img5} style={{ width: '100%' }} />
+            </div>
+            <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
+              <img src={sec8img6} style={{ width: '100%' }} />
+            </div>
+            <div>
+            </div>
+          </div>
         </div>
-        <div style={{ display: 'flex', flexWrap: 'wrap', rowGap:'30px' }}>
-          <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
-            <img src={sec8img1} style={{ width: '100%' }} />
+      </div>
+
+      <div className='sec9'>
+        <div className='container'>
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <p id="sec4_title" style={{ textAlign: 'left' }}>Where Art  Meets Coffee Culture</p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div className='container'>
+                  <div class="testbox1">
+                    <div className='col-lg-5 col-md-5 col-sm-12'>
+                      <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
+                        <img src={quotes} style={{ width: 'max-content' }} />
+                        <p id="testdesc">The Coffee Canvas serves coffee that's like a work of art, and the vibe is great!</p>
+                        <div style={{ display: '-webkit-box', gap: '20px' }}>
+                          <img src={line} />
+                          <p id="testname"><span id="name"><b>Asha</b></span>, Coffee Fan</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
+                      <img src={test1} id="test1" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div className='container'>
+                <div class="testbox1">
+                    <div className='col-lg-5 col-md-5 col-sm-12'>
+                      <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
+                        <img src={quotes} style={{ width: 'max-content' }} />
+                        <p id="testdesc">Top-tier coffee, cozy vibes. A hidden gem for those seeking quality brews and a warm atmosphere</p>
+                        <div style={{ display: '-webkit-box', gap: '20px' }}>
+                          <img src={line} />
+                          <p id="testname"><span id="name"><b>James</b></span>, Coffee Connoisseur</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
+                      <img src={test2} id="test1" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div className='container'>
+                <div class="testbox1">
+                    <div className='col-lg-5 col-md-5 col-sm-12'>
+                      <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
+                        <img src={quotes} style={{ width: 'max-content' }} />
+                        <p id="testdesc">Favorite coffee spot! Consistent excellence in every cup, coupled with a laid-back ambiance. A must-try for coffee lovers.</p>
+                        <div style={{ display: '-webkit-box', gap: '20px' }}>
+                          <img src={line} />
+                          <p id="testname"><span id="name"><b>Emma</b></span>, Espresso Aficionado</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
+                      <img src={img3} id="test1" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
-            <img src={sec8img2} style={{ width: '100%' }} />
-          </div>
-          <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
-            <img src={sec8img3} style={{ width: '100%' }} />
-          </div>
-          <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
-            <img src={sec8img4} style={{ width: '100%' }} />
-          </div>
-          <div className='serc8col col-lg-4 col-md-6 col-sm-12'>
-            <img src={sec8img5} style={{ width: '100%' }} />
-          </div>
-          <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
-            <img src={sec8img6} style={{ width: '100%' }} />
-          </div>
-          <div>
-          </div>
-        </div>
         </div>
       </div>
     </div>
