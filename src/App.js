@@ -337,7 +337,7 @@ function App() {
                   <div class="testbox1">
                     <div className='col-lg-5 col-md-5 col-sm-12'>
                       <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
-                        <img src={quotes} style={{ width: 'max-content' }} />
+                        <img src={quotes} id="quotes" />
                         <p id="testdesc">The Coffee Canvas serves coffee that's like a work of art, and the vibe is great!</p>
                         <div style={{ display: '-webkit-box', gap: '20px' }}>
                           <img src={line} />
@@ -356,7 +356,7 @@ function App() {
                 <div class="testbox1">
                     <div className='col-lg-5 col-md-5 col-sm-12'>
                       <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
-                        <img src={quotes} style={{ width: 'max-content' }} />
+                        <img src={quotes} id='quotes'/>
                         <p id="testdesc">Top-tier coffee, cozy vibes. A hidden gem for those seeking quality brews and a warm atmosphere</p>
                         <div style={{ display: '-webkit-box', gap: '20px' }}>
                           <img src={line} />
@@ -375,7 +375,7 @@ function App() {
                 <div class="testbox1">
                     <div className='col-lg-5 col-md-5 col-sm-12'>
                       <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
-                        <img src={quotes} style={{ width: 'max-content' }} />
+                        <img src={quotes} id="quotes"/>
                         <p id="testdesc">Favorite coffee spot! Consistent excellence in every cup, coupled with a laid-back ambiance. A must-try for coffee lovers.</p>
                         <div style={{ display: '-webkit-box', gap: '20px' }}>
                           <img src={line} />
