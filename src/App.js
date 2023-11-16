@@ -33,7 +33,11 @@ import dot from './img/dot.png'
 import sec7img1 from './img/sec7img1.png'
 import sec7img2 from './img/sec7img2.png'
 import sec8img1 from './img/sec8img1.png'
-
+import sec8img2 from './img/sec8img2.png'
+import sec8img3 from './img/sec8img3.png'
+import sec8img4 from './img/sec8img4.png'
+import sec8img5 from './img/sec8img5.png'
+import sec8img6 from './img/sec8img6.png'
 
 function Image(props) {
   const ref = useRef()
@@ -282,37 +286,34 @@ function App() {
         </div>
       </div>
 
-      <div className='sec8 section'>
+      <div className='sec8 section' style={{padding:'100px 0px'}}>
         <div className='container' style={{ display: 'flex', flexDirection: 'column', gap: '30px', alignItems:'center'}}>
-          <p>Community & Creativity</p>
+          <span id="abouttext">Community & Creativity</span>
           <p id='sec4_title'>Where Art  Meets Coffee Culture</p>
-          <p>The Coffee Canvas is more than a coffee house; it's a vibrant gallery of creativity and connection. Open mic nights and collaborative events transform our space into a haven for inspiration. Here, the scent of fresh coffee mingles with the aroma of artistic expression, making each visit a journey through art and flavour.</p>
-        <div className='col-lg-2 col-md-2 col-sm-12' style={{ display: 'flex', placeContent: 'space-between' }}>
+          <p id='sec4_desc'>The Coffee Canvas is more than a coffee house; it's a vibrant gallery of creativity and connection. Open mic nights and collaborative events transform our space into a haven for inspiration. Here, the scent of fresh coffee mingles with the aroma of artistic expression, making each visit a journey through art and flavour.</p>
+        <div className='col-lg-2 col-md-2 col-sm-12' style={{ display: 'flex', placeContent: 'space-between', fontSize: '20px' }}>
           <p>All</p>
           <p>Mumbai</p>
           <p>Delhi</p>
         </div>
-        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', rowGap:'30px' }}>
           <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
             <img src={sec8img1} style={{ width: '100%' }} />
           </div>
           <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
-            <img src={sec8img1} style={{ width: '100%' }} />
+            <img src={sec8img2} style={{ width: '100%' }} />
           </div>
           <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
-            <img src={sec8img1} style={{ width: '100%' }} />
+            <img src={sec8img3} style={{ width: '100%' }} />
           </div>
           <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
-            <img src={sec8img1} style={{ width: '100%' }} />
+            <img src={sec8img4} style={{ width: '100%' }} />
           </div>
           <div className='serc8col col-lg-4 col-md-6 col-sm-12'>
-            <img src={sec8img1} style={{ width: '100%' }} />
+            <img src={sec8img5} style={{ width: '100%' }} />
           </div>
           <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
-            <img src={sec8img1} style={{ width: '100%' }} />
-          </div>
-          <div className='serc8col col-lg-4 col-md-6 col-sm-12'>
-            <img src={sec8img1} style={{ width: '100%' }} />
+            <img src={sec8img6} style={{ width: '100%' }} />
           </div>
           <div>
           </div>

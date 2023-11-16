@@ -306,6 +306,14 @@ padding-right: 0px;
 
 /* SEC7 */
 
+/* SEC8 */
+
+  .sec8{
+    background: url('./img/sec8bg.png');
+  }
+
+/* SEC8 */
+
 /* 1100px to 800px */
 
 @media (min-width:800px) and (max-width:1100px) {
