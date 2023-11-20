@@ -393,6 +393,13 @@ p {
   width: 70px;
 }
 
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+  transform: none;
+  transition-duration: 2s;
+}
+
 /* SEC9 */
 
 /* 1100px to 800px */
@@ -530,6 +537,11 @@ p {
   #testdesc {
     font-size: 16px;
     width: -webkit-fill-available;
+}
+
+.testbox1 {
+   flex-direction: column-reverse;
+   gap: 70px;
 }
 }
 
