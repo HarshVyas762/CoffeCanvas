@@ -411,7 +411,7 @@ function App() {
       <div className='footer'>
         <div className='container'>
           <div style={{display:'flex',alignItems:'flex-start'}}>
-            <div className='col-lg-5 col-md-5 col-sm-12' style={{display:'flex',gap:'20px',flexDirection:'column'}}>
+            <div className='col-lg-5 col-md-5 col-sm-12 div1col1' style={{display:'flex',gap:'20px',flexDirection:'column'}}>
               <p id="footer_title">Visit Us</p>
               <p id="footer_desc">Where every visit is a masterpiece. For coffee enthusiasts and curious souls alike, our team is here to guide you through a world of flavour and design.</p>
               <span id="footer_desc">Hours of Operation:
@@ -424,12 +424,12 @@ function App() {
               </span>
             </div>
           </div>
-          <div style={{display:'flex', placeContent:'space-between', flexWrap:'wrap',marginTop:'clamp(30px,50%,100px)', paddingBottom: 'clamp(40px, 50%, 100px)'}}>
+          <div style={{display:'flex', placeContent:'space-between', gap:'40px' , flexWrap:'wrap',marginTop:'clamp(30px,50%,100px)', paddingBottom: 'clamp(40px, 50%, 70px)'}}>
             <div className='col-lg-4 col-md-12 col-sm-12' style={{justifyContent:'center',display:'flex',flexDirection:'column', gap:'20px'}}>
               <h5 id='subtitle'>TheCoffeeCanvas</h5>
               <p className='subtext'>High level experience in web design and development knowledge, producing quality work.</p>
               </div>  
-            <div className='col-lg-2  col-md-4 col-sm-12'>
+            <div className='col-lg-2  col-md-4 col-sm-12 div2col2'>
               <div style={{display:'flex', flexDirection:'column', gap:'20px'}}>
                 <p><b>Use Cases</b></p>
                 <p className='subtext'>Web-designers</p>
@@ -438,7 +438,7 @@ function App() {
                 <p className='subtext'>Website Builder</p>
               </div>
             </div>
-            <div className='col-lg-2 col-md-4 col-sm-12'>
+            <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
               <div style={{display:'flex', flexDirection:'column', gap:'20px'}}>
                   <p><b>Company</b></p>
                   <p className='subtext'>About Us</p>
@@ -448,7 +448,7 @@ function App() {
                   <p className='subtext'>Contact Us</p>
               </div>
             </div>
-            <div className='col-lg-3 col-md-4 col-sm-12'>
+            <div className='col-lg-3 col-md-4 col-sm-12 div2col2'>
               <p>Follow us</p>
               <br></br>
               <div style={{display:'flex', gap:'20px',flexWrap:'wrap'}}>

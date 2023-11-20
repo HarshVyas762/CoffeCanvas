@@ -407,9 +407,9 @@ p {
 
 .footer {
   background: url('./img/footer_bg.png');
-  padding-top: clamp(40px, 50%, 100px);
+  padding-top: clamp(40px, 50%, 70px);
   background-repeat: no-repeat;
-  margin-top: clamp(30px,50%,100px);
+  margin-top: clamp(100px,82%,170px);
   background-size: cover;
 }
 
@@ -593,6 +593,32 @@ p {
     flex-direction: column-reverse;
     gap: 70px;
   }
+
+  #footer_title{
+    font-size: 46px;
+    line-height: 60px;
+  }
+
+  #footer_desc{
+    font-size: 18px;
+  }
+
+  .subtext {
+    font-size: 16px;
+}
+
+.div1col1{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.div2col2{
+  border-top: 1px solid #b0babf;
+  padding-top: 30px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
 }
 
 /* 800px */
