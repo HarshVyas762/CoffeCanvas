@@ -40,14 +40,13 @@ import sec8img5 from './img/sec8img5.png'
 import sec8img6 from './img/sec8img6.png'
 import test1 from './img/test1.png'
 import test2 from './img/test2.jpg'
-import test3 from './img/test3.jpg'
 import quotes from './img/quotes.svg'
 import soc1 from './img/soc1.png'
 import soc2 from './img/soc2.png'
 import soc3 from './img/soc3.png'
 import soc4 from './img/soc4.png'
 import soc5 from './img/soc5.png'
-
+import Sidebar from './Sidebar';
 
 function Image(props) {
   const ref = useRef()
@@ -110,7 +109,8 @@ function App() {
       </Helmet>
 
       <div className='sec1'>
-        <div className='container' style={{ display: 'flex', placeContent: 'space-between', padding: '40px 0', placeSelf: 'center', textAlign: 'center' }}>
+        <div className='container nav'>
+          <Sidebar />
           <div className='col-lg-3' id="logo">TheCoffeeCanvas</div>
           <div className='col-lg-5 menu-link' style={{ placeContent: 'space-between', alignItems: 'center', color: 'white' }}>
             <p>Menu</p>
