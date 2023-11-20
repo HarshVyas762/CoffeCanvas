@@ -424,7 +424,7 @@ function App() {
               </span>
             </div>
           </div>
-          <div style={{display:'flex', placeContent:'space-between', gap:'40px' , flexWrap:'wrap',marginTop:'clamp(30px,50%,100px)', paddingBottom: 'clamp(40px, 50%, 70px)'}}>
+          <div className='div2'>
             <div className='col-lg-4 col-md-12 col-sm-12 div2col1' style={{justifyContent:'center',display:'flex',flexDirection:'column', gap:'20px'}}>
               <h5 id='subtitle'>TheCoffeeCanvas</h5>
               <p className='subtext'>High level experience in web design and development knowledge, producing quality work.</p>

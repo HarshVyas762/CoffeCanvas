@@ -449,6 +449,15 @@ p {
   text-align: left;
 }
 
+.div2{
+  display: flex;
+  place-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  gap: 40px;
+}
+
 /* Footer */
 
 /* 1100px to 800px */
@@ -610,6 +619,15 @@ p {
 .div1col1{
   padding-left: 0px !important;
   padding-right: 0px !important;
+}
+
+.div2{
+    display: flex;
+    place-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    gap: 40px;
 }
 
 .div2col1{
