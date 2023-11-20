@@ -612,6 +612,12 @@ p {
   padding-right: 0px !important;
 }
 
+.div2col1{
+  border-top: 1px solid #b0babf;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
 .div2col2{
   border-top: 1px solid #b0babf;
   padding-top: 30px;
