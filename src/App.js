@@ -410,12 +410,12 @@ function App() {
 
       <div className='footer'>
         <div className='container'>
-          <div style={{display:'flex',alignItems:'flex-start'}}>
-            <div className='col-lg-5 col-md-5 col-sm-12 div1col1' style={{display:'flex',gap:'20px',flexDirection:'column'}}>
+          <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+            <div className='col-lg-5 col-md-5 col-sm-12 div1col1' style={{ display: 'flex', gap: '20px', flexDirection: 'column' }}>
               <p id="footer_title">Visit Us</p>
               <p id="footer_desc">Where every visit is a masterpiece. For coffee enthusiasts and curious souls alike, our team is here to guide you through a world of flavour and design.</p>
               <span id="footer_desc">Hours of Operation:
-                <ul> 
+                <ul>
                   <br></br>
                   <li>Monday to Friday: 7:00 AM - 8:00 PM</li>
                   <br></br>
@@ -425,38 +425,38 @@ function App() {
             </div>
           </div>
           <div className='div2'>
-            <div className='col-lg-4 col-md-12 col-sm-12 div2col1' style={{justifyContent:'center',display:'flex',flexDirection:'column', gap:'20px'}}>
+            <div className='col-lg-4 col-md-12 col-sm-12 div2col1' style={{ justifyContent: 'center', display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <h5 id='subtitle'>TheCoffeeCanvas</h5>
               <p className='subtext'>High level experience in web design and development knowledge, producing quality work.</p>
-              </div>  
+            </div>
             <div className='col-lg-2  col-md-4 col-sm-12 div2col2'>
-              <div style={{display:'flex', flexDirection:'column', gap:'20px'}}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <p><b>Use Cases</b></p>
                 <p className='subtext'>Web-designers</p>
                 <p className='subtext'>Marketers</p>
-                <p  className='subtext'>Small Business</p>
+                <p className='subtext'>Small Business</p>
                 <p className='subtext'>Website Builder</p>
               </div>
             </div>
             <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
-              <div style={{display:'flex', flexDirection:'column', gap:'20px'}}>
-                  <p><b>Company</b></p>
-                  <p className='subtext'>About Us</p>
-                  <p className='subtext'>Careers</p>
-                  <p className='subtext'>FAQs</p>
-                  <p className='subtext'>Terms</p>
-                  <p className='subtext'>Contact Us</p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <p><b>Company</b></p>
+                <p className='subtext'>About Us</p>
+                <p className='subtext'>Careers</p>
+                <p className='subtext'>FAQs</p>
+                <p className='subtext'>Terms</p>
+                <p className='subtext'>Contact Us</p>
               </div>
             </div>
             <div className='col-lg-3 col-md-4 col-sm-12 div2col2'>
               <p>Follow us</p>
               <br></br>
-              <div style={{display:'flex', gap:'20px',flexWrap:'wrap'}}>
-                 <img src={soc1} className='socimg' />
-                 <img src={soc2} className='socimg' />
-                 <img src={soc3} className='socimg' />
-                 <img src={soc4} className='socimg' />
-                 <img src={soc5} className='socimg' />
+              <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+                <img src={soc1} className='socimg' />
+                <img src={soc2} className='socimg' />
+                <img src={soc3} className='socimg' />
+                <img src={soc4} className='socimg' />
+                <img src={soc5} className='socimg' />
               </div>
             </div>
           </div>
