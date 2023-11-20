@@ -42,6 +42,12 @@ import test1 from './img/test1.png'
 import test2 from './img/test2.jpg'
 import test3 from './img/test3.jpg'
 import quotes from './img/quotes.svg'
+import soc1 from './img/soc1.png'
+import soc2 from './img/soc2.png'
+import soc3 from './img/soc3.png'
+import soc4 from './img/soc4.png'
+import soc5 from './img/soc5.png'
+
 
 function Image(props) {
   const ref = useRef()
@@ -353,10 +359,10 @@ function App() {
               </div>
               <div class="carousel-item">
                 <div className='container'>
-                <div class="testbox1">
+                  <div class="testbox1">
                     <div className='col-lg-5 col-md-5 col-sm-12'>
                       <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
-                        <img src={quotes} id='quotes'/>
+                        <img src={quotes} id='quotes' />
                         <p id="testdesc">Top-tier coffee, cozy vibes. A hidden gem for those seeking quality brews and a warm atmosphere</p>
                         <div style={{ display: '-webkit-box', gap: '20px' }}>
                           <img src={line} />
@@ -372,10 +378,10 @@ function App() {
               </div>
               <div class="carousel-item">
                 <div className='container'>
-                <div class="testbox1">
+                  <div class="testbox1">
                     <div className='col-lg-5 col-md-5 col-sm-12'>
                       <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
-                        <img src={quotes} id="quotes"/>
+                        <img src={quotes} id="quotes" />
                         <p id="testdesc">Favorite coffee spot! Consistent excellence in every cup, coupled with a laid-back ambiance. A must-try for coffee lovers.</p>
                         <div style={{ display: '-webkit-box', gap: '20px' }}>
                           <img src={line} />
@@ -401,6 +407,62 @@ function App() {
           </div>
         </div>
       </div>
+
+      <div className='footer'>
+        <div className='container'>
+          <div style={{display:'flex',alignItems:'flex-start'}}>
+            <div className='col-lg-5 col-md-5 col-sm-12' style={{display:'flex',gap:'20px',flexDirection:'column'}}>
+              <p id="footer_title">Visit Us</p>
+              <p id="footer_desc">Where every visit is a masterpiece. For coffee enthusiasts and curious souls alike, our team is here to guide you through a world of flavour and design.</p>
+              <span id="footer_desc">Hours of Operation:
+                <ul> 
+                  <br></br>
+                  <li>Monday to Friday: 7:00 AM - 8:00 PM</li>
+                  <br></br>
+                  <li>Saturday and Sunday: 8:00 AM - 7:00 PM</li>
+                </ul>
+              </span>
+            </div>
+          </div>
+          <div style={{display:'flex', placeContent:'space-between', flexWrap:'wrap',marginTop:'clamp(30px,50%,100px)', paddingBottom: 'clamp(40px, 50%, 100px)'}}>
+            <div className='col-lg-4 col-md-12 col-sm-12' style={{justifyContent:'center',display:'flex',flexDirection:'column', gap:'20px'}}>
+              <h5 id='subtitle'>TheCoffeeCanvas</h5>
+              <p className='subtext'>High level experience in web design and development knowledge, producing quality work.</p>
+              </div>  
+            <div className='col-lg-2  col-md-4 col-sm-12'>
+              <div style={{display:'flex', flexDirection:'column', gap:'20px'}}>
+                <p><b>Use Cases</b></p>
+                <p className='subtext'>Web-designers</p>
+                <p className='subtext'>Marketers</p>
+                <p  className='subtext'>Small Business</p>
+                <p className='subtext'>Website Builder</p>
+              </div>
+            </div>
+            <div className='col-lg-2 col-md-4 col-sm-12'>
+              <div style={{display:'flex', flexDirection:'column', gap:'20px'}}>
+                  <p><b>Company</b></p>
+                  <p className='subtext'>About Us</p>
+                  <p className='subtext'>Careers</p>
+                  <p className='subtext'>FAQs</p>
+                  <p className='subtext'>Terms</p>
+                  <p className='subtext'>Contact Us</p>
+              </div>
+            </div>
+            <div className='col-lg-3 col-md-4 col-sm-12'>
+              <p>Follow us</p>
+              <br></br>
+              <div style={{display:'flex', gap:'20px',flexWrap:'wrap'}}>
+                 <img src={soc1} className='socimg' />
+                 <img src={soc2} className='socimg' />
+                 <img src={soc3} className='socimg' />
+                 <img src={soc4} className='socimg' />
+                 <img src={soc5} className='socimg' />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
