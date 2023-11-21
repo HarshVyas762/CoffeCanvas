@@ -18,7 +18,8 @@ import img4 from './img/img4.jpg';
 import img5 from './img/img5.jpg';
 import img6 from './img/img6.jpg';
 import img7 from './img/img7.jpg';
-import img8 from './img/img8.jpg';import line from './img/Rectangle 74.svg';
+import img8 from './img/img8.jpg';
+import line from './img/Rectangle 74.svg';
 import artistic from './img/icon-2_1920X 1 (1).png';
 import cultural from './img/icon-4_1920X 1.png';
 import sec3img from './img/sec3img.png';
@@ -43,6 +44,7 @@ import soc4 from './img/soc4.png'
 import soc5 from './img/soc5.png'
 import Sidebar from './Sidebar';
 import Sec3 from './component/Sec3';
+import Sec4 from './component/Sec4';
 
 function Image(props) {
   const ref = useRef()
@@ -175,7 +177,9 @@ function App() {
 
       </div> */}
 
-      <div className='sec4 section'>
+      <Sec4 />
+
+      {/* <div className='sec4 section'>
         <div className='container' style={{ display: 'flex', flexWrap: 'wrap', rowGap: '60px' }}>
           <div className='col-lg-6 col-md-6 col-sm-12' style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
             <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
@@ -201,7 +205,7 @@ function App() {
             <img src={sec3img} id="sec3img" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className='sec5 section'>
         <div style={{ display: 'flex', placeContent: 'space-between', rowGap: '60px', flexWrap: 'wrap' }}>
