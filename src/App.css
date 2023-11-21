@@ -117,7 +117,14 @@ p {
 
 .sec3 {
   background-color: #f2ead3;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
 
+.sec3.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .sec2box {
@@ -125,6 +132,9 @@ p {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s, transform 1s;
 }
 
 .sec2img {
@@ -132,6 +142,30 @@ p {
   align-self: center;
 }
 
+/* animation */
+
+.sec3.visible .sec2box {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sec2box:nth-child(1) {
+  transition-delay: 0.3s;
+}
+
+.sec2box:nth-child(2) {
+  transition-delay: 0.6s;
+}
+
+.sec2box:nth-child(3) {
+  transition-delay: 0.9s;
+}
+
+.sec2box:nth-child(4) {
+  transition-delay: 1.2s;
+}
+
+/* animaation */
 /* SEC3 */
 
 /* SEC4 */

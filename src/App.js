@@ -18,12 +18,7 @@ import img4 from './img/img4.jpg';
 import img5 from './img/img5.jpg';
 import img6 from './img/img6.jpg';
 import img7 from './img/img7.jpg';
-import img8 from './img/img8.jpg';
-import coffeecup from './img/coffee-cup 1.png';
-import badge from './img/quality 1.png';
-import beans from './img/coffee-beans 1.png';
-import brewd from './img/coffee 1.png';
-import line from './img/Rectangle 74.svg';
+import img8 from './img/img8.jpg';import line from './img/Rectangle 74.svg';
 import artistic from './img/icon-2_1920X 1 (1).png';
 import cultural from './img/icon-4_1920X 1.png';
 import sec3img from './img/sec3img.png';
@@ -47,6 +42,7 @@ import soc3 from './img/soc3.png'
 import soc4 from './img/soc4.png'
 import soc5 from './img/soc5.png'
 import Sidebar from './Sidebar';
+import Sec3 from './component/Sec3';
 
 function Image(props) {
   const ref = useRef()
@@ -146,7 +142,9 @@ function App() {
         </Canvas>
       </div>
 
-      <div className='sec3'>
+    <Sec3 />
+
+      {/* <div className='sec3'>
         <div className='container'>
           <div style={{ display: 'flex', flexWrap: 'wrap', rowGap: '60px', placeContent: 'space-between', justifyContent: 'center', alignSelf: 'center', padding: '100px 0' }}>
             <div className='col-lg-3 col-md-5 col-sm-12 sec2box'>
@@ -175,7 +173,7 @@ function App() {
           </div>
         </div>
 
-      </div>
+      </div> */}
 
       <div className='sec4 section'>
         <div className='container' style={{ display: 'flex', flexWrap: 'wrap', rowGap: '60px' }}>
