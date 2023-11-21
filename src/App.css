@@ -281,7 +281,15 @@ p {
 
 .sec5 {
   padding: 100px 0;
-  background: url('./img/sec5bg.png')
+  background: url('./img/sec5bg.png');
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.sec5.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #sec5img {
@@ -291,6 +299,37 @@ p {
 #sec5col1 {
   padding-left: 0px;
 }
+
+/* animation */
+
+.sec5box {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.sec5.visible .sec5box {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sec5box:nth-child(1) {
+  transition-delay: 0.3s;
+}
+
+.sec5box:nth-child(2) {
+  transition-delay: 0.6s;
+}
+
+.sec5box:nth-child(3) {
+  transition-delay: 0.9s;
+}
+
+.sec5box:nth-child(4) {
+  transition-delay: 1.2s;
+}
+
+/* animaation */
 
 /* SEC5 */
 

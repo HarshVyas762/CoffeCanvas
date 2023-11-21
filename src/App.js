@@ -45,6 +45,7 @@ import soc5 from './img/soc5.png'
 import Sidebar from './Sidebar';
 import Sec3 from './component/Sec3';
 import Sec4 from './component/Sec4';
+import Sec5 from './component/Sec5'
 
 function Image(props) {
   const ref = useRef()
@@ -207,7 +208,9 @@ function App() {
         </div>
       </div> */}
 
-      <div className='sec5 section'>
+      <Sec5 />
+
+      {/* <div className='sec5 section'>
         <div style={{ display: 'flex', placeContent: 'space-between', rowGap: '60px', flexWrap: 'wrap' }}>
           <div className='col-lg-5 col-md-5 col-sm-12' id="sec5col1">
             <img src={sec5img} id="sec5img" />
@@ -244,7 +247,7 @@ function App() {
 
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className='sec6 section'>
         <div className='container' style={{ display: 'flex', flexWrap: 'wrap', placeContent: 'space-around', rowGap: '50px' }}>
