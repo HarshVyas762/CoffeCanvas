@@ -46,6 +46,7 @@ import Sidebar from './Sidebar';
 import Sec3 from './component/Sec3';
 import Sec4 from './component/Sec4';
 import Sec5 from './component/Sec5'
+import Sec6 from './component/Sec6';
 
 function Image(props) {
   const ref = useRef()
@@ -249,7 +250,9 @@ function App() {
         </div>
       </div> */}
 
-      <div className='sec6 section'>
+      <Sec6 />
+
+      {/* <div className='sec6 section'>
         <div className='container' style={{ display: 'flex', flexWrap: 'wrap', placeContent: 'space-around', rowGap: '50px' }}>
           <div className='col-lg-7 col-md-7 col-sm-12' style={{ display: 'flex', flexDirection: 'column', rowGap: '30px' }}>
             <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
@@ -268,8 +271,7 @@ function App() {
             </div>
           </div>
         </div>
-
-      </div>
+      </div> */}
 
       <div className='sec7 section' style={{ display: 'flex', flexWrap: 'wrap', gap: '50px' }}>
         <div className='col-lg-7 col-md-7 col-sm-12 sec7col1' style={{ display: 'flex', paddingLeft: '0px' }}>

@@ -371,6 +371,39 @@ p {
   gap: 30px;
 }
 
+/* animation */
+
+.sec6 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.sec6 .sec4col1{
+    translate: translateX(-100px);
+}
+
+.sec6 .sec4col1{
+  translate: translateX(100px);
+}
+
+.sec6.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sec6col1 {
+  transform: translateY(-100%);
+  transition: transform 1.5s;
+}
+
+.sec6col2 {
+  transform: translateY(100%);
+  transition: transform 1.5s;
+}
+
+/* animation */
+
 /* SEC6 */
 
 /* SEC7 */
