@@ -260,6 +260,10 @@ p {
 
 /* SEC5 */
 
+.sec5{
+  margin-top: 100px;
+}
+
 #sec5_boxtitle {
   color: var(--Dark, #3F2305);
   font-family: Rancho;
@@ -466,7 +470,7 @@ p {
 }
 
 .sec7col2 {
-  translate: translateX(-100px);
+  translate: translateX(100px);
 }
 
 .sec7.visible {
@@ -480,7 +484,7 @@ p {
 }
 
 #sec7subdiv2 {
-  transform: translateX(100%);
+  transform: translatey(100%);
   transition: transform 1.5s;
 }
 
@@ -542,7 +546,7 @@ p {
 }
 
 #test1 {
-  width: 100%;
+  width: auto;
   height: 500px;
 }
 
@@ -594,9 +598,10 @@ p {
 /* Footer */
 
 .footer {
-  background: url('./img/footer_bg.png');
+  background: #3f2305;
   padding-top: clamp(40px, 50%, 70px);
   background-repeat: no-repeat;
+  color:white;
   margin-top: clamp(100px, 82%, 170px);
   background-size: cover;
 }

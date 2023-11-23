@@ -39,6 +39,7 @@ import Sec4 from './component/Sec4';
 import Sec5 from './component/Sec5'
 import Sec6 from './component/Sec6';
 import Sec7 from './component/Sec7';
+import Coffee from './Coffee';
 
 function Image(props) {
   const ref = useRef()
@@ -312,17 +313,17 @@ function App() {
             <p>Delhi</p>
           </div>
           <div className='sec8grid' style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '30px' }}>
-            <img src={sec8img1} style={{ width: '350px' }} alt='' />
+            <img src={sec8img1} style={{ width: '300px' }} alt='' />
 
-            <img src={sec8img2} style={{ width: '350px' }} alt='' />
+            <img src={sec8img2} style={{ width: '300px' }} alt='' />
 
-            <img src={sec8img3} style={{ width: '350px' }} alt='' />
+            <img src={sec8img3} style={{ width: '300px' }} alt='' />
 
-            <img src={sec8img4} style={{ width: '350px' }} alt='' />
+            <img src={sec8img4} style={{ width: '300px' }} alt='' />
 
-            <img src={sec8img5} style={{ width: '350px' }} alt='' />
+            <img src={sec8img5} style={{ width: '300px' }} alt='' />
 
-            <img src={sec8img6} style={{ width: '350px' }} alt='' />
+            <img src={sec8img6} style={{ width: '300px' }} alt='' />
 
             <div>
             </div>
@@ -407,7 +408,7 @@ function App() {
 
       <div className='footer'>
         <div className='container'>
-          <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start',placeContent:'space-between',flexWrap:'wrap' }}>
             <div className='col-lg-5 col-md-5 col-sm-12 div1col1' style={{ display: 'flex', gap: '20px', flexDirection: 'column' }}>
               <p id="footer_title">Visit Us</p>
               <p id="footer_desc">Where every visit is a masterpiece. For coffee enthusiasts and curious souls alike, our team is here to guide you through a world of flavour and design.</p>
@@ -419,6 +420,9 @@ function App() {
                   <li>Saturday and Sunday: 8:00 AM - 7:00 PM</li>
                 </ul>
               </span>
+            </div>
+            <div className='col-lg-5 col-md-5 col-sm-12' style={{textAlign:'-webkit-center',alignSelf:'center'}}>
+              <Coffee />
             </div>
           </div>
           <div className='div2'>
