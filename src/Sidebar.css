@@ -14,7 +14,7 @@
 .sidebar.open {
   right: 0;
   opacity: 1;
-  width: 100%;
+  width: -webkit-fill-available;
   z-index: 999999999;
   display: flex;
   flex-direction: column;
