@@ -513,7 +513,7 @@ p {
 }
 
 .carousel-control-prev-icon {
-  background: url('./img/prev.png') !important;
+  background: url('./img/prev.svg') !important;
   background-repeat: no-repeat !important;
   width: 63px !important;
   height: 63px !important;
@@ -796,6 +796,10 @@ p {
     position: fixed;
     background-color: #3F2305;
     z-index: 99999999;
+  }
+
+  .menu-link{
+    display: none;
   }
 
   #logo {
