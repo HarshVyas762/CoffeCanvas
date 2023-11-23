@@ -42,7 +42,7 @@ const Sec6 = () => {
   return (
     <div className={`sec6 section ${isVisible ? 'visible' : ''}`} ref={sectionRef}>
               <div className='container' style={{ display: 'flex', flexWrap: 'wrap', placeContent: 'space-around', rowGap: '50px' }}>
-          <div className='col-lg-7 col-md-7 col-sm-12 sec6col1' style={{ display: 'flex', flexDirection: 'column', rowGap: '30px' }}>
+          <div className='col-lg-7 col-md-6 col-sm-12 sec6col1' style={{ display: 'flex', flexDirection: 'column', rowGap: '30px' }}>
             <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
               <img src={line} style={{ width: '80px' }} />
               <span id="abouttext">THE MOBILE APP</span>

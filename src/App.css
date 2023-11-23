@@ -32,11 +32,11 @@ p {
   margin-top: 100px;
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .container {
     max-width: 1300px !important;
   }
-}
+} */
 
 
 /* sec1 */
@@ -231,11 +231,11 @@ p {
   transition: opacity 1s, transform 1s;
 }
 
-.sec4 .sec4col1{
-    translate: translateX(-100px);
+.sec4 .sec4col1 {
+  translate: translateX(-100px);
 }
 
-.sec4 .sec4col2{
+.sec4 .sec4col2 {
   translate: translateX(100px);
 }
 
@@ -379,11 +379,11 @@ p {
   transition: opacity 1s, transform 1s;
 }
 
-.sec6 .sec4col1{
-    translate: translateX(-100px);
+.sec6 .sec4col1 {
+  translate: translateX(-100px);
 }
 
-.sec6 .sec4col1{
+.sec6 .sec4col1 {
   translate: translateX(100px);
 }
 
@@ -407,13 +407,19 @@ p {
 /* SEC6 */
 
 /* SEC7 */
+
+.sec7 .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
 .arrow {
   border: solid black;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3.5px;
 }
-
 
 .up {
   transform: rotate(-47deg);
@@ -457,6 +463,12 @@ p {
 
 .sec8 {
   background: url('./img/sec8bg.png');
+}
+
+.sec8grid {
+  display: grid;
+  row-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* SEC8 */
@@ -562,7 +574,7 @@ p {
 
 #footer_title {
   font-family: Rancho;
-  font-size: 96px;
+  font-size: 76px;
   font-weight: 400;
   line-height: 119px;
   letter-spacing: 0em;
@@ -589,7 +601,7 @@ p {
 
 .subtext {
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0em;
@@ -609,7 +621,7 @@ p {
 
 /* 1100px to 800px */
 
-@media (min-width:800px) and (max-width:1100px) {
+@media (min-width:700px) and (max-width:1100px) {
 
   #sec5img {
     width: 100%;
@@ -627,13 +639,17 @@ p {
   #more_menu {
     font-size: 14px;
   }
+
+  .sec6 .container {
+    flex-direction: row;
+  }
 }
 
 /* 1100px to 800px */
 
 /* 800px */
 
-@media(max-width:800px) {
+@media(max-width:700px) {
 
   #sec3img {
     width: -webkit-fill-available;
@@ -798,7 +814,7 @@ p {
     z-index: 99999999;
   }
 
-  .menu-link{
+  .menu-link {
     display: none;
   }
 

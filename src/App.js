@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Helmet } from "react-helmet";
 import * as THREE from 'three';
@@ -10,21 +9,13 @@ import { ScrollControls, Scroll, useScroll } from './ScrollControls.tsx';
 import trip1 from './img/trip1.jpg';
 import trip2 from './img/trip2.jpg';
 import trip3 from './img/trip3.jpg';
-import trip4 from './img/trip4.jpg';
 import img1 from './img/img1.jpg';
 import img2 from './img/img2.jpg';
 import img3 from './img/img3.jpg';
 import img4 from './img/img4.jpg';
 import img5 from './img/img5.jpg';
 import img6 from './img/img6.jpg';
-import img7 from './img/img7.jpg';
-import img8 from './img/img8.jpg';
 import line from './img/Rectangle 74.svg';
-import artistic from './img/icon-2_1920X 1 (1).png';
-import cultural from './img/icon-4_1920X 1.png';
-import sec3img from './img/sec3img.png';
-import sec5img from './img/sec5img.png';
-import sec6img from './img/sec6img.png';
 import dot from './img/dot.png'
 import sec7img1 from './img/sec7img1.png'
 import sec7img2 from './img/sec7img2.png'
@@ -146,7 +137,7 @@ function App() {
         </Canvas>
       </div>
 
-    <Sec3 />
+      <Sec3 />
 
       {/* <div className='sec3'>
         <div className='container'>
@@ -273,34 +264,36 @@ function App() {
         </div>
       </div> */}
 
-      <div className='sec7 section' style={{ display: 'flex', flexWrap: 'wrap', gap: '50px' }}>
-        <div className='col-lg-7 col-md-7 col-sm-12 sec7col1' style={{ display: 'flex', paddingLeft: '0px' }}>
-          <div className='col-lg-6 col-md-6' id='sec7subdiv1' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            <img src={sec7img1} id="sec7img1" />
-            <div className='dotdiv'>
-              <img src={dot} id="dot" />
-              <p id="sec6sweet">Sweet Black Coffee</p>
+      <div className='sec7 section'>
+        <div className='container'>
+          <div className='col-lg-7 col-md-12 col-sm-12 sec7col1' style={{ display: 'flex', paddingLeft: '0px' }}>
+            <div className='col-lg-6 col-md-6' id='sec7subdiv1' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              <img src={sec7img1} id="sec7img1" alt='' />
+              <div className='dotdiv'>
+                <img src={dot} id="dot" alt='' />
+                <p id="sec6sweet">Sweet Black Coffee</p>
+              </div>
             </div>
-          </div>
-          <div className='col-lg-6 col-md-6' id='sec7subdiv2' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            <img src={sec7img2} id="sec7img2" />
-            <div className='dotdiv'>
-              <img src={dot} id="dot" />
-              <p id="sec6sweet">Mochaccino Cream Coffee</p>
+            <div className='col-lg-6 col-md-6' id='sec7subdiv2' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              <img src={sec7img2} id="sec7img2" alt='' />
+              <div className='dotdiv'>
+                <img src={dot} id="dot" alt='' />
+                <p id="sec6sweet">Mochaccino Cream Coffee</p>
+              </div>
             </div>
-          </div>
 
-        </div>
-        <div className='col-lg-4 col-md-4 col-sm-12' style={{ display: 'flex', flexDirection: 'column', gap: '30px', paddingTop: '60px' }}>
-          <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
-            <img src={line} style={{ width: '80px' }} />
-            <span id="abouttext">BEST MENU</span>
           </div>
-          <p id='sec4_title'>Flavorful Artistry to Satisfy Your Senses</p>
-          <p id='sec4_desc'>Our menu is a canvas of flavor, featuring handcrafted coffees, teas, cold beverages, and delectable pastries. Whether it's breakfast, a midday pick-me-up, or a leisurely afternoon, we have delights for every palate.</p>
-          <div style={{ display: 'flex', placeContent: 'space-between' }}>
-            <button id="more_menu">More Menu</button>
-            <p id="sec7check" style={{ alignSelf: 'center', fontFamily: 'Popins', fontWeight: '100', color: '#49545A' }}>Check your survey <i class="arrow up"></i></p>
+          <div className='col-lg-4 col-md-12 col-sm-12' style={{ display: 'flex', flexDirection: 'column', gap: '30px', paddingTop: '60px' }}>
+            <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
+              <img src={line} style={{ width: '80px' }} alt='' />
+              <span id="abouttext">BEST MENU</span>
+            </div>
+            <p id='sec4_title'>Flavorful Artistry to Satisfy Your Senses</p>
+            <p id='sec4_desc'>Our menu is a canvas of flavor, featuring handcrafted coffees, teas, cold beverages, and delectable pastries. Whether it's breakfast, a midday pick-me-up, or a leisurely afternoon, we have delights for every palate.</p>
+            <div style={{ display: 'flex', placeContent: 'space-between' }}>
+              <button id="more_menu">More Menu</button>
+              <p id="sec7check" style={{ alignSelf: 'center', fontFamily: 'Popins', fontWeight: '100', color: '#49545A' }}>Check your survey <i class="arrow up"></i></p>
+            </div>
           </div>
         </div>
       </div>
@@ -315,25 +308,19 @@ function App() {
             <p>Mumbai</p>
             <p>Delhi</p>
           </div>
-          <div style={{ display: 'flex', flexWrap: 'wrap', rowGap: '30px' }}>
-            <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
-              <img src={sec8img1} style={{ width: '100%' }} />
-            </div>
-            <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
-              <img src={sec8img2} style={{ width: '100%' }} />
-            </div>
-            <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
-              <img src={sec8img3} style={{ width: '100%' }} />
-            </div>
-            <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
-              <img src={sec8img4} style={{ width: '100%' }} />
-            </div>
-            <div className='serc8col col-lg-4 col-md-6 col-sm-12'>
-              <img src={sec8img5} style={{ width: '100%' }} />
-            </div>
-            <div className='sec8col col-lg-4 col-md-6 col-sm-12'>
-              <img src={sec8img6} style={{ width: '100%' }} />
-            </div>
+          <div className='sec8grid' style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '30px' }}>
+            <img src={sec8img1} style={{ width: '350px' }} alt='' />
+
+            <img src={sec8img2} style={{ width: '350px' }} alt='' />
+
+            <img src={sec8img3} style={{ width: '350px' }} alt='' />
+
+            <img src={sec8img4} style={{ width: '350px' }} alt='' />
+
+            <img src={sec8img5} style={{ width: '350px' }} alt='' />
+
+            <img src={sec8img6} style={{ width: '350px' }} alt='' />
+
             <div>
             </div>
           </div>
@@ -350,16 +337,16 @@ function App() {
                   <div class="testbox1">
                     <div className='col-lg-5 col-md-5 col-sm-12'>
                       <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
-                        <img src={quotes} id="quotes" />
+                        <img src={quotes} id="quotes" alt='' />
                         <p id="testdesc">The Coffee Canvas serves coffee that's like a work of art, and the vibe is great!</p>
                         <div style={{ display: '-webkit-box', gap: '20px' }}>
-                          <img src={line} />
+                          <img src={line} alt='' />
                           <p id="testname"><span id="name"><b>Asha</b></span>, Coffee Fan</p>
                         </div>
                       </div>
                     </div>
                     <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
-                      <img src={test1} id="test1" />
+                      <img src={test1} id="test1" alt='' />
                     </div>
                   </div>
                 </div>
@@ -369,16 +356,16 @@ function App() {
                   <div class="testbox1">
                     <div className='col-lg-5 col-md-5 col-sm-12'>
                       <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
-                        <img src={quotes} id='quotes' />
+                        <img src={quotes} id='quotes' alt='' />
                         <p id="testdesc">Top-tier coffee, cozy vibes. A hidden gem for those seeking quality brews and a warm atmosphere</p>
                         <div style={{ display: '-webkit-box', gap: '20px' }}>
-                          <img src={line} />
+                          <img src={line} alt='' />
                           <p id="testname"><span id="name"><b>James</b></span>, Coffee Connoisseur</p>
                         </div>
                       </div>
                     </div>
                     <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
-                      <img src={test2} id="test1" />
+                      <img src={test2} id="test1" alt='' />
                     </div>
                   </div>
                 </div>
@@ -388,16 +375,16 @@ function App() {
                   <div class="testbox1">
                     <div className='col-lg-5 col-md-5 col-sm-12'>
                       <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
-                        <img src={quotes} id="quotes" />
+                        <img src={quotes} id="quotes" alt='' />
                         <p id="testdesc">Favorite coffee spot! Consistent excellence in every cup, coupled with a laid-back ambiance. A must-try for coffee lovers.</p>
                         <div style={{ display: '-webkit-box', gap: '20px' }}>
-                          <img src={line} />
+                          <img src={line} alt='' />
                           <p id="testname"><span id="name"><b>Emma</b></span>, Espresso Aficionado</p>
                         </div>
                       </div>
                     </div>
                     <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
-                      <img src={img3} id="test1" />
+                      <img src={img3} id="test1" alt='' />
                     </div>
                   </div>
                 </div>
@@ -438,7 +425,7 @@ function App() {
             </div>
             <div className='col-lg-2  col-md-4 col-sm-12 div2col2'>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                <p><b>Use Cases</b></p>
+                <p style={{fontSize:'18px'}}><b>Use Cases</b></p>
                 <p className='subtext'>Web-designers</p>
                 <p className='subtext'>Marketers</p>
                 <p className='subtext'>Small Business</p>
@@ -447,7 +434,7 @@ function App() {
             </div>
             <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                <p><b>Company</b></p>
+                <p style={{fontSize:'18px'}}><b>Company</b></p>
                 <p className='subtext'>About Us</p>
                 <p className='subtext'>Careers</p>
                 <p className='subtext'>FAQs</p>
@@ -455,15 +442,15 @@ function App() {
                 <p className='subtext'>Contact Us</p>
               </div>
             </div>
-            <div className='col-lg-3 col-md-4 col-sm-12 div2col2'>
+            <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
               <p>Follow us</p>
               <br></br>
               <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
-                <img src={soc1} className='socimg' />
-                <img src={soc2} className='socimg' />
-                <img src={soc3} className='socimg' />
-                <img src={soc4} className='socimg' />
-                <img src={soc5} className='socimg' />
+                <img src={soc1} className='socimg' alt='' />
+                <img src={soc2} className='socimg' alt='' />
+                <img src={soc3} className='socimg' alt='' />
+                <img src={soc4} className='socimg' alt='' />
+                <img src={soc5} className='socimg' alt='' />
               </div>
             </div>
           </div>
