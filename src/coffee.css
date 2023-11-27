@@ -141,6 +141,10 @@
         height: 175px;
     }
 
+    .vapour span {
+        will-change: transform; /* Apply will-change to the animated property */
+    }
+
     .plate {
         bottom: -40px;
         width: 350px;
@@ -153,6 +157,7 @@
         width: 100px;
         height: 104px;
         transform: rotate(48deg);
+        
     }
 
     .vapour span {
