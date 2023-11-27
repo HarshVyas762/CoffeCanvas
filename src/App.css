@@ -500,8 +500,22 @@ p {
 
 .sec8grid {
   display: grid;
-  row-gap: 30px;
+  gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+  .sec8grid{
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
+  gap: 20px;
+}
+}
+/* Responsive layout for mobile */
+@media screen and (max-width: 480px) {
+  .sec8grid{
+  grid-template-columns: 1fr; /* 1 column for mobile */
+  row-gap: 30px;
+}
 }
 
 /* SEC8 */
@@ -854,6 +868,11 @@ p {
 
   #logo {
     text-align: left;
+  }
+
+  .coffeecol{
+    margin-top: 90px;
+    margin-bottom: 70px;
   }
 }
 

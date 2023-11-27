@@ -312,7 +312,7 @@ function App() {
             <p>Mumbai</p>
             <p>Delhi</p>
           </div>
-          <div className='sec8grid' style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '30px' }}>
+          <div className='sec8grid'>
             <img src={sec8img1} style={{ width: '300px' }} alt='' />
 
             <img src={sec8img2} style={{ width: '300px' }} alt='' />
@@ -408,7 +408,7 @@ function App() {
 
       <div className='footer'>
         <div className='container'>
-          <div style={{ display: 'flex', alignItems: 'flex-start',placeContent:'space-between',flexWrap:'wrap' }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start',placeContent:'space-between',flexWrap:'wrap'}}>
             <div className='col-lg-5 col-md-5 col-sm-12 div1col1' style={{ display: 'flex', gap: '20px', flexDirection: 'column' }}>
               <p id="footer_title">Visit Us</p>
               <p id="footer_desc">Where every visit is a masterpiece. For coffee enthusiasts and curious souls alike, our team is here to guide you through a world of flavour and design.</p>
@@ -421,7 +421,7 @@ function App() {
                 </ul>
               </span>
             </div>
-            <div className='col-lg-5 col-md-5 col-sm-12' style={{textAlign:'-webkit-center',alignSelf:'center'}}>
+            <div className='col-lg-5 col-md-5 col-sm-12 coffeecol' style={{textAlign:'-webkit-center',alignSelf:'center'}}>
               <Coffee />
             </div>
           </div>
