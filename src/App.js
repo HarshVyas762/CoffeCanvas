@@ -114,48 +114,48 @@ function App() {
           <Loader />
         </div>
       ) : (
-      <>
-        <div className='sec1'>
-          <div className='container nav'>
-            <Sidebar />
-            <div className='col-lg-3' id="logo">TheCoffeeCanvas</div>
-            <div className='col-lg-5 menu-link' style={{ placeContent: 'space-between', alignItems: 'center', color: 'white' }}>
-              <p>Menu</p>
-              <p>Service</p>
-              <p>Location</p>
-              <p>About</p>
-              <p>Career</p>
-            </div>
-            <div className='col-lg-2 menu-btn'>
-              <button id="headbtn">Contact</button>
+        <>
+          <div className='sec1'>
+            <div className='container nav'>
+              <Sidebar />
+              <div className='col-lg-3' id="logo">TheCoffeeCanvas</div>
+              <div className='col-lg-5 menu-link' style={{ placeContent: 'space-between', alignItems: 'center', color: 'white' }}>
+                <p>Menu</p>
+                <p>Service</p>
+                <p>Location</p>
+                <p>About</p>
+                <p>Career</p>
+              </div>
+              <div className='col-lg-2 menu-btn'>
+                <button id="headbtn">Contact</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className='sec2'>
-          <Canvas gl={{ antialias: false }} dpr={[1, 1.5]} style={{ height: '700px' }}>
-            <Suspense fallback={null}>
-              <ScrollControls infinite horizontal damping={4} pages={4} distance={1}>
-                <Scroll>
-                  <Pages />
-                </Scroll>
-                <Scroll html>
-                  <h1 style={{ position: 'absolute', top: '40vh', left: '-75vw', fontSize: '5rem' }}>Coffe</h1>
-                  <h1 style={{ position: 'absolute', top: '40vh', left: '25vw', fontSize: '5rem' }}>Canvas</h1>
-                  <h1 style={{ position: 'absolute', top: '40vh', left: '125vw', fontSize: '5rem' }}>Coffee</h1>
-                  <h1 style={{ position: 'absolute', top: '40vh', left: '225vw', fontSize: '5rem' }}>Canvas</h1>
-                  <h1 style={{ position: 'absolute', top: '40vh', left: '325vw', fontSize: '5rem' }}>Coffee</h1>
-                  <h1 style={{ position: 'absolute', top: '40vh', left: '425vw', fontSize: '5rem' }}>Canvas</h1>
-                </Scroll>
-              </ScrollControls>
-              <Preload />
-            </Suspense>
-          </Canvas>
-        </div>
+          <div className='sec2'>
+            <Canvas gl={{ antialias: false }} dpr={[1, 1.5]} style={{ height: '700px' }}>
+              <Suspense fallback={null}>
+                <ScrollControls infinite horizontal damping={4} pages={4} distance={1}>
+                  <Scroll>
+                    <Pages />
+                  </Scroll>
+                  <Scroll html>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '-75vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '25vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '125vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '225vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '325vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '425vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
+                  </Scroll>
+                </ScrollControls>
+                <Preload />
+              </Suspense>
+            </Canvas>
+          </div>
 
-        <Sec3 />
+          <Sec3 />
 
-        {/* <div className='sec3'>
+          {/* <div className='sec3'>
         <div className='container'>
           <div style={{ display: 'flex', flexWrap: 'wrap', rowGap: '60px', placeContent: 'space-between', justifyContent: 'center', alignSelf: 'center', padding: '100px 0' }}>
             <div className='col-lg-3 col-md-5 col-sm-12 sec2box'>
@@ -186,9 +186,9 @@ function App() {
 
       </div> */}
 
-        <Sec4 />
+          <Sec4 />
 
-        {/* <div className='sec4 section'>
+          {/* <div className='sec4 section'>
         <div className='container' style={{ display: 'flex', flexWrap: 'wrap', rowGap: '60px' }}>
           <div className='col-lg-6 col-md-6 col-sm-12' style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
             <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
@@ -216,9 +216,9 @@ function App() {
         </div>
       </div> */}
 
-        <Sec5 />
+          <Sec5 />
 
-        {/* <div className='sec5 section'>
+          {/* <div className='sec5 section'>
         <div style={{ display: 'flex', placeContent: 'space-between', rowGap: '60px', flexWrap: 'wrap' }}>
           <div className='col-lg-5 col-md-5 col-sm-12' id="sec5col1">
             <img src={sec5img} id="sec5img" />
@@ -257,9 +257,9 @@ function App() {
         </div>
       </div> */}
 
-        <Sec6 />
+          <Sec6 />
 
-        {/* <div className='sec6 section'>
+          {/* <div className='sec6 section'>
         <div className='container' style={{ display: 'flex', flexWrap: 'wrap', placeContent: 'space-around', rowGap: '50px' }}>
           <div className='col-lg-7 col-md-7 col-sm-12' style={{ display: 'flex', flexDirection: 'column', rowGap: '30px' }}>
             <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
@@ -280,9 +280,9 @@ function App() {
         </div>
       </div> */}
 
-        <Sec7 />
+          <Sec7 />
 
-        {/* <div className='sec7 section'>
+          {/* <div className='sec7 section'>
         <div className='container'>
           <div className='col-lg-7 col-md-12 col-sm-12 sec7col1' style={{ display: 'flex', paddingLeft: '0px' }}>
             <div className='col-lg-6 col-md-6' id='sec7subdiv1' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
@@ -316,173 +316,173 @@ function App() {
         </div>
       </div> */}
 
-        <div className='sec8 section' style={{ padding: '100px 0px' }}>
-          <div className='container' style={{ display: 'flex', flexDirection: 'column', gap: '30px', alignItems: 'center' }}>
-            <span id="abouttext">Community & Creativity</span>
-            <p id='sec4_title'>Where Art  Meets Coffee Culture</p>
-            <p id='sec4_desc'>The Coffee Canvas is more than a coffee house; it's a vibrant gallery of creativity and connection. Open mic nights and collaborative events transform our space into a haven for inspiration. Here, the scent of fresh coffee mingles with the aroma of artistic expression, making each visit a journey through art and flavour.</p>
-            <div className='col-lg-2 col-md-2 col-sm-12' style={{ display: 'flex', placeContent: 'space-between', fontSize: '20px', padding: '0px' }}>
-              <p>All</p>
-              <p>Mumbai</p>
-              <p>Delhi</p>
-            </div>
-            <div className='sec8grid'>
-              <img src={sec8img1} className='sec8img' alt='' />
-
-              <img src={sec8img2} className='sec8img' alt='' />
-
-              <img src={sec8img3} className='sec8img' alt='' />
-
-              <img src={sec8img4} className='sec8img' alt='' />
-
-              <img src={sec8img5} className='sec8img' alt='' />
-
-              <img src={sec8img6} className='sec8img' alt='' />
-
-              <div>
+          <div className='sec8 section' style={{ padding: '100px 0px' }}>
+            <div className='container' style={{ display: 'flex', flexDirection: 'column', gap: '30px', alignItems: 'center' }}>
+              <span id="abouttext">Community & Creativity</span>
+              <p id='sec4_title'>Where Art  Meets Coffee Culture</p>
+              <p id='sec4_desc'>The Coffee Canvas is more than a coffee house; it's a vibrant gallery of creativity and connection. Open mic nights and collaborative events transform our space into a haven for inspiration. Here, the scent of fresh coffee mingles with the aroma of artistic expression, making each visit a journey through art and flavour.</p>
+              <div className='col-lg-2 col-md-2 col-sm-12' style={{ display: 'flex', placeContent: 'space-between', fontSize: '20px', padding: '0px' }}>
+                <p>All</p>
+                <p>Mumbai</p>
+                <p>Delhi</p>
               </div>
-            </div>
-          </div>
-        </div>
+              <div className='sec8grid'>
+                <img src={sec8img1} className='sec8img' alt='' />
 
-        <div className='sec9'>
-          <div className='container'>
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-              <p id="sec4_title" style={{ textAlign: 'left' }}>Where Art  Meets Coffee Culture</p>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div className='container'>
-                    <div class="testbox1">
-                      <div className='col-lg-5 col-md-5 col-sm-12'>
-                        <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
-                          <img src={quotes} id="quotes" alt='' />
-                          <p id="testdesc">The Coffee Canvas serves coffee that's like a work of art, and the vibe is great!</p>
-                          <div style={{ display: '-webkit-box', gap: '20px' }}>
-                            <img src={line} alt='' />
-                            <p id="testname"><span id="name"><b>Asha</b></span>, Coffee Fan</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
-                        <img src={test1} id="test1" alt='' />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div className='container'>
-                    <div class="testbox1">
-                      <div className='col-lg-5 col-md-5 col-sm-12'>
-                        <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
-                          <img src={quotes} id='quotes' alt='' />
-                          <p id="testdesc">Top-tier coffee, cozy vibes. A hidden gem for those seeking quality brews and a warm atmosphere</p>
-                          <div style={{ display: '-webkit-box', gap: '20px' }}>
-                            <img src={line} alt='' />
-                            <p id="testname"><span id="name"><b>James</b></span>, Coffee Connoisseur</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
-                        <img src={test2} id="test1" alt='' />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div className='container'>
-                    <div class="testbox1">
-                      <div className='col-lg-5 col-md-5 col-sm-12'>
-                        <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
-                          <img src={quotes} id="quotes" alt='' />
-                          <p id="testdesc">Favorite coffee spot! Consistent excellence in every cup, coupled with a laid-back ambiance. A must-try for coffee lovers.</p>
-                          <div style={{ display: '-webkit-box', gap: '20px' }}>
-                            <img src={line} alt='' />
-                            <p id="testname"><span id="name"><b>Emma</b></span>, Espresso Aficionado</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
-                        <img src={img3} id="test1" alt='' />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
+                <img src={sec8img2} className='sec8img' alt='' />
 
-        <div className='footer'>
-          <div className='container'>
-            <div style={{ display: 'flex', alignItems: 'flex-start', placeContent: 'space-between', flexWrap: 'wrap' }}>
-              <div className='col-lg-5 col-md-5 col-sm-12 div1col1' style={{ display: 'flex', gap: '20px', flexDirection: 'column' }}>
-                <p id="footer_title">Visit Us</p>
-                <p id="footer_desc">Where every visit is a masterpiece. For coffee enthusiasts and curious souls alike, our team is here to guide you through a world of flavour and design.</p>
-                <span id="footer_desc">Hours of Operation:
-                  <ul>
-                    <br></br>
-                    <li>Monday to Friday: 7:00 AM - 8:00 PM</li>
-                    <br></br>
-                    <li>Saturday and Sunday: 8:00 AM - 7:00 PM</li>
-                  </ul>
-                </span>
-              </div>
-              <div className='col-lg-5 col-md-5 col-sm-12 coffeecol' style={{ textAlign: '-webkit-center', alignSelf: 'center' }}>
-                <Coffee />
-              </div>
-            </div>
-            <div className='div2'>
-              <div className='col-lg-4 col-md-12 col-sm-12 div2col1' style={{ justifyContent: 'center', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                <h5 id='subtitle'>TheCoffeeCanvas</h5>
-                <p className='subtext'>High level experience in web design and development knowledge, producing quality work.</p>
-              </div>
-              <div className='col-lg-2  col-md-4 col-sm-12 div2col2'>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                  <p style={{ fontSize: '18px' }}><b>Use Cases</b></p>
-                  <p className='subtext'>Web-designers</p>
-                  <p className='subtext'>Marketers</p>
-                  <p className='subtext'>Small Business</p>
-                  <p className='subtext'>Website Builder</p>
-                </div>
-              </div>
-              <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                  <p style={{ fontSize: '18px' }}><b>Company</b></p>
-                  <p className='subtext'>About Us</p>
-                  <p className='subtext'>Careers</p>
-                  <p className='subtext'>FAQs</p>
-                  <p className='subtext'>Terms</p>
-                  <p className='subtext'>Contact Us</p>
-                </div>
-              </div>
-              <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
-                <p>Follow us</p>
-                <br></br>
-                <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
-                  <img src={soc1} className='socimg' alt='' />
-                  <img src={soc2} className='socimg' alt='' />
-                  <img src={soc3} className='socimg' alt='' />
-                  <img src={soc4} className='socimg' alt='' />
-                  <img src={soc5} className='socimg' alt='' />
+                <img src={sec8img3} className='sec8img' alt='' />
+
+                <img src={sec8img4} className='sec8img' alt='' />
+
+                <img src={sec8img5} className='sec8img' alt='' />
+
+                <img src={sec8img6} className='sec8img' alt='' />
+
+                <div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* <div>
+          <div className='sec9'>
+            <div className='container'>
+              <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <p id="sec4_title" style={{ textAlign: 'left' }}>Where Art  Meets Coffee Culture</p>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div className='container'>
+                      <div class="testbox1">
+                        <div className='col-lg-5 col-md-5 col-sm-12'>
+                          <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
+                            <img src={quotes} id="quotes" alt='' />
+                            <p id="testdesc">The Coffee Canvas serves coffee that's like a work of art, and the vibe is great!</p>
+                            <div style={{ display: '-webkit-box', gap: '20px' }}>
+                              <img src={line} alt='' />
+                              <p id="testname"><span id="name"><b>Asha</b></span>, Coffee Fan</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
+                          <img src={test1} id="test1" alt='' />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div className='container'>
+                      <div class="testbox1">
+                        <div className='col-lg-5 col-md-5 col-sm-12'>
+                          <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
+                            <img src={quotes} id='quotes' alt='' />
+                            <p id="testdesc">Top-tier coffee, cozy vibes. A hidden gem for those seeking quality brews and a warm atmosphere</p>
+                            <div style={{ display: '-webkit-box', gap: '20px' }}>
+                              <img src={line} alt='' />
+                              <p id="testname"><span id="name"><b>James</b></span>, Coffee Connoisseur</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
+                          <img src={test2} id="test1" alt='' />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div className='container'>
+                      <div class="testbox1">
+                        <div className='col-lg-5 col-md-5 col-sm-12'>
+                          <div style={{ display: 'flex', gap: '20px', flexDirection: 'column', gap: '30px' }}>
+                            <img src={quotes} id="quotes" alt='' />
+                            <p id="testdesc">Favorite coffee spot! Consistent excellence in every cup, coupled with a laid-back ambiance. A must-try for coffee lovers.</p>
+                            <div style={{ display: '-webkit-box', gap: '20px' }}>
+                              <img src={line} alt='' />
+                              <p id="testname"><span id="name"><b>Emma</b></span>, Espresso Aficionado</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
+                          <img src={img3} id="test1" alt='' />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className='footer'>
+            <div className='container'>
+              <div style={{ display: 'flex', alignItems: 'flex-start', placeContent: 'space-between', flexWrap: 'wrap' }}>
+                <div className='col-lg-5 col-md-5 col-sm-12 div1col1' style={{ display: 'flex', gap: '20px', flexDirection: 'column' }}>
+                  <p id="footer_title">Visit Us</p>
+                  <p id="footer_desc">Where every visit is a masterpiece. For coffee enthusiasts and curious souls alike, our team is here to guide you through a world of flavour and design.</p>
+                  <span id="footer_desc">Hours of Operation:
+                    <ul>
+                      <br></br>
+                      <li>Monday to Friday: 7:00 AM - 8:00 PM</li>
+                      <br></br>
+                      <li>Saturday and Sunday: 8:00 AM - 7:00 PM</li>
+                    </ul>
+                  </span>
+                </div>
+                <div className='col-lg-5 col-md-5 col-sm-12 coffeecol' style={{ textAlign: '-webkit-center', alignSelf: 'center' }}>
+                  <Coffee />
+                </div>
+              </div>
+              <div className='div2'>
+                <div className='col-lg-4 col-md-12 col-sm-12 div2col1' style={{ justifyContent: 'center', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                  <h5 id='subtitle'>TheCoffeeCanvas</h5>
+                  <p className='subtext'>High level experience in web design and development knowledge, producing quality work.</p>
+                </div>
+                <div className='col-lg-2  col-md-4 col-sm-12 div2col2'>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                    <p style={{ fontSize: '18px' }}><b>Use Cases</b></p>
+                    <p className='subtext'>Web-designers</p>
+                    <p className='subtext'>Marketers</p>
+                    <p className='subtext'>Small Business</p>
+                    <p className='subtext'>Website Builder</p>
+                  </div>
+                </div>
+                <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                    <p style={{ fontSize: '18px' }}><b>Company</b></p>
+                    <p className='subtext'>About Us</p>
+                    <p className='subtext'>Careers</p>
+                    <p className='subtext'>FAQs</p>
+                    <p className='subtext'>Terms</p>
+                    <p className='subtext'>Contact Us</p>
+                  </div>
+                </div>
+                <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
+                  <p>Follow us</p>
+                  <br></br>
+                  <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+                    <img src={soc1} className='socimg' alt='' />
+                    <img src={soc2} className='socimg' alt='' />
+                    <img src={soc3} className='socimg' alt='' />
+                    <img src={soc4} className='socimg' alt='' />
+                    <img src={soc5} className='socimg' alt='' />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* <div>
           <Loader />
         </div> */}
- 
-      </>)}
+
+        </>)}
     </div>
   );
 }
