@@ -478,9 +478,9 @@ function App() {
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <Loader />
-        </div>
+        </div> */}
  
       </>)}
     </div>
