@@ -36,43 +36,43 @@ const Sec7 = () => {
       document.querySelector('#sec7subdiv1').style.transform = 'translateY(0)';
       document.querySelector('#sec7subdiv2').style.transform = 'translateY(0)';
 
-      document.querySelector('.sec7col2').style.transform = 'translateX(0)';      
+      document.querySelector('.sec7col2').style.transform = 'translateX(0)';
     }
   }, [isVisible]);
 
   return (
     <div className={`sec7 section ${isVisible ? 'visible' : ''}`} ref={sectionRef}>
-        <div className='container'>
-          <div className='col-lg-7 col-md-12 col-sm-12 sec7col1' style={{ display: 'flex', paddingLeft: '0px' }}>
-            <div className='col-lg-6 col-md-6' id='sec7subdiv1' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              <img src={sec7img1} id="sec7img1" alt='' />
-              <div className='dotdiv'>
-                <img src={dot} id="dot" alt='' />
-                <p id="sec6sweet">Sweet Black Coffee</p>
-              </div>
+      <div className='container'>
+        <div className='col-lg-7 col-md-12 col-sm-12 sec7col1' style={{ display: 'flex', paddingLeft: '0px' }}>
+          <div className='col-lg-6 col-md-6' id='sec7subdiv1' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+            <img src={sec7img1} id="sec7img1" alt='' />
+            <div className='dotdiv'>
+              <img src={dot} id="dot" alt='' />
+              <p id="sec6sweet">Sweet Black Coffee</p>
             </div>
-            <div className='col-lg-6 col-md-6' id='sec7subdiv2' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              <img src={sec7img2} id="sec7img2" alt='' />
-              <div className='dotdiv'>
-                <img src={dot} id="dot" alt='' />
-                <p id="sec6sweet">Mochaccino Cream Coffee</p>
-              </div>
-            </div>
-
           </div>
-          <div className='col-lg-4 col-md-12 col-sm-12 sec7col2' style={{ display: 'flex', flexDirection: 'column', gap: '30px', paddingTop: '60px' }}>
-            <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
-              <img src={line} style={{ width: '80px' }} alt='' />
-              <span id="abouttext">BEST MENU</span>
+          <div className='col-lg-6 col-md-6' id='sec7subdiv2' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+            <img src={sec7img2} id="sec7img2" alt='' />
+            <div className='dotdiv'>
+              <img src={dot} id="dot" alt='' />
+              <p id="sec6sweet">Mochaccino Cream Coffee</p>
             </div>
-            <p id='sec4_title'>Flavorful Artistry to Satisfy Your Senses</p>
-            <p id='sec4_desc'>Our menu is a canvas of flavor, featuring handcrafted coffees, teas, cold beverages, and delectable pastries. Whether it's breakfast, a midday pick-me-up, or a leisurely afternoon, we have delights for every palate.</p>
-            <div style={{ display: 'flex', placeContent: 'space-between' }}>
-              <button id="more_menu">More Menu</button>
-              <p id="sec7check" style={{ alignSelf: 'center', fontFamily: 'Popins', fontWeight: '100', color: '#49545A' }}>Check your survey <i class="arrow up"></i></p>
-            </div>
+          </div>
+
+        </div>
+        <div className='col-lg-4 col-md-12 col-sm-12 sec7col2' style={{ display: 'flex', flexDirection: 'column', gap: '30px', paddingTop: '60px' }}>
+          <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
+            <img src={line} style={{ width: '80px' }} alt='' />
+            <span id="abouttext">BEST MENU</span>
+          </div>
+          <p id='sec4_title'>Flavorful Artistry to Satisfy Your Senses</p>
+          <p id='sec4_desc'>Our menu is a canvas of flavor, featuring handcrafted coffees, teas, cold beverages, and delectable pastries. Whether it's breakfast, a midday pick-me-up, or a leisurely afternoon, we have delights for every palate.</p>
+          <div style={{ display: 'flex', placeContent: 'space-between' }}>
+            <button id="more_menu">More Menu</button>
+            <p id="sec7check" style={{ alignSelf: 'center', fontFamily: 'Popins', fontWeight: '100', color: '#49545A' }}>Check your survey <i class="arrow up"></i></p>
           </div>
         </div>
+      </div>
     </div>
   );
 };

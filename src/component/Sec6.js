@@ -44,7 +44,7 @@ const Sec6 = () => {
               <div className='container' style={{ display: 'flex', flexWrap: 'wrap', placeContent: 'space-around', rowGap: '50px' }}>
           <div className='col-lg-7 col-md-6 col-sm-12 sec6col1' style={{ display: 'flex', flexDirection: 'column', rowGap: '30px' }}>
             <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
-              <img src={line} style={{ width: '80px' }} />
+              <img src={line} style={{ width: '80px' }} alt='' />
               <span id="abouttext">THE MOBILE APP</span>
             </div>
             <p id='sec4_title'>Never Run Out of Your Favorite Blend</p>
@@ -52,9 +52,9 @@ const Sec6 = () => {
             <button id='subscribe'>Subscribe</button>
           </div>
           <div className='col-lg-3 col-md-5 col-sm-12 sec6col2' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            <img src={sec6img} style={{ width: '100%' }} />
+            <img src={sec6img} style={{ width: '100%' }} alt=''/>
             <div style={{ display: 'flex', gap: '30px' }}>
-              <img src={dot} id="dot" />
+              <img src={dot} id="dot" alt='' />
               <p id="sec6sweet">Sweet Black Coffee</p>
             </div>
           </div>

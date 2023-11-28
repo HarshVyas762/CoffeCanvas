@@ -45,25 +45,25 @@ const Sec3 = () => {
       <div className='container'>
           <div style={{ display: 'flex', flexWrap: 'wrap', rowGap: '60px', placeContent: 'space-between', justifyContent: 'center', alignSelf: 'center', padding: '100px 0' }}>
             <div className='col-lg-3 col-md-5 col-sm-12 sec2box'>
-              <img src={coffeecup} className='sec2img' />
+              <img src={coffeecup} className='sec2img' alt='' />
               <h3 className='sec2_title'>Awesome Aroma</h3>
               <p className='sec2_desc'>The coffee is brewed by first roasting the green coffee beans</p>
             </div>
 
             <div className='col-lg-3 col-md-5 col-sm-12 sec2box'>
-              <img src={badge} className='sec2img' />
+              <img src={badge} className='sec2img' alt='' />
               <h3 className='sec2_title'>High Quality</h3>
               <p className='sec2_desc'>The coffee is brewed by first roasting the green coffee beans</p>
             </div>
 
             <div className='col-lg-3 col-md-5 col-sm-12 sec2box'>
-              <img src={beans} className='sec2img' />
+              <img src={beans} className='sec2img' alt='' />
               <h3 className='sec2_title'>Pure Grades</h3>
               <p className='sec2_desc'>The coffee is brewed by first roasting the green coffee beans</p>
             </div>
 
             <div className='col-lg-3 col-md-5 col-sm-12 sec2box'>
-              <img src={brewd} className='sec2img' />
+              <img src={brewd} className='sec2img' alt='' />
               <h3 className='sec2_title'>Proper Roasting</h3>
               <p className='sec2_desc'>The coffee is brewed by first roasting the green coffee beans</p>
             </div>

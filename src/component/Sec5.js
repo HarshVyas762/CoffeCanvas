@@ -46,32 +46,32 @@ const Sec5 = () => {
     <div className={`sec5 ${isVisible ? 'visible' : ''}`} ref={sectionRef}>
       <div style={{ display: 'flex', placeContent: 'space-between', rowGap: '60px', flexWrap: 'wrap' }}>
           <div className='col-lg-5 col-md-5 col-sm-12' id="sec5col1">
-            <img src={sec5img} id="sec5img" />
+            <img src={sec5img} id="sec5img" alt='' />
           </div>
           <div className='col-lg-7 col-md-7 col-sm-12' style={{ display: 'flex', flexDirection: 'column', gap: '28px', paddingRight: '0px' }}>
             <p id='sec4_title'>Artistry in Every Cup</p>
             <p id='sec4_desc'>At The Coffee Canvas, we're not just making coffee; we're painting a masterpiece. Our beans are carefully sourced from around the globe, each telling its own story through its unique flavors. Like a skilled artist, our baristas use their expertise to create a symphony of flavors in every cup.</p>
             <div style={{ display: 'flex', rowGap: '50px', flexWrap: 'wrap', marginTop: '40px' }}>
               <div className='col-lg-6 col-md-6 col-sm-12 sec5box' style={{ display: 'flex', gap: '20px' }}>
-                <div style={{ alignSelf: 'center' }}><img src={artistic}></img></div>
+                <div style={{ alignSelf: 'center' }}><img src={artistic} alt=''></img></div>
                 <div><h5 id='sec5_boxtitle'>World’s Best Beans</h5>
                   <p id="sec5_boxdesc">We partner with passionate, quality-focused farmers worldwide to craft our exceptional blends.</p>
                 </div>
               </div>
               <div className='col-lg-6 col-md-6 col-sm-12 sec5box' style={{ display: 'flex', gap: '20px' }}>
-                <div style={{ alignSelf: 'center' }}><img src={cultural}></img></div>
+                <div style={{ alignSelf: 'center' }}><img src={cultural} alt=''></img></div>
                 <div><h5 id='sec5_boxtitle'>Baristas as Artists</h5>
                   <p id="sec5_boxdesc">Our baristas craft consistently outstanding coffee experiences, turning every cup into a work of art</p>
                 </div>
               </div>
               <div className='col-lg-6 col-md-6 col-sm-12 sec5box' style={{ display: 'flex', gap: '20px' }}>
-                <div style={{ alignSelf: 'center' }}><img src={artistic}></img></div>
+                <div style={{ alignSelf: 'center' }}><img src={artistic} alt=''></img></div>
                 <div><h5 id='sec5_boxtitle'>Freshness & Quality</h5>
                   <p id="sec5_boxdesc">We prioritize freshness with in-house roasting and meticulous brewing to craft each cup as a true work of art</p>
                 </div>
               </div>
               <div className='col-lg-6 col-md-6 col-sm-12 sec5box' style={{ display: 'flex', gap: '20px' }}>
-                <div style={{ alignSelf: 'center' }}><img src={cultural}></img></div>
+                <div style={{ alignSelf: 'center' }}><img src={cultural} alt=''></img></div>
                 <div><h5 id='sec5_boxtitle'>Symphony of Flavours</h5>
                   <p id="sec5_boxdesc">Explore a world of flavors with our diverse artisan roasts, catering to every coffee lover's taste.</p>
                 </div>
