@@ -11,7 +11,6 @@ body {
   box-sizing: border-box;
 }
 
-
 h1,
 h2,
 h3,
@@ -37,7 +36,6 @@ p {
     max-width: 1300px !important;
   }
 } */
-
 
 /* sec1 */
 
@@ -504,6 +502,10 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.sec8img{
+  width: 300px;
+}
+
 @media screen and (max-width: 768px) {
   .sec8grid{
   grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
@@ -516,6 +518,11 @@ p {
   grid-template-columns: 1fr; /* 1 column for mobile */
   row-gap: 30px;
 }
+
+.sec8img{
+  width: 100%;
+}
+
 }
 
 /* SEC8 */
