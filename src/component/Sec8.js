@@ -12,7 +12,8 @@ import '../App.css'
 
 function JustifiedExample() {
   return (
-    <Tabs defaultActiveKey="profile" id="justify-tab-example" className="mb-3" style={{border:'none',gap:"30px"
+    <Tabs defaultActiveKey="profile" id="justify-tab-example" className="mb-3 fade" style={{
+      border: 'none', gap: "30px", opacity: '1'
     }}>
       <Tab eventKey="home" title="All">
         <TabContent>

@@ -80,6 +80,7 @@ p {
 
 .menu-link p {
   transition-duration: 0.3s;
+  cursor: pointer;
 }
 
 .menu-link p:hover {
@@ -542,6 +543,7 @@ p {
 .nav-link:focus, .nav-link:hover {
   color: #3f2305 !important;
 }
+
 
 @media screen and (max-width: 768px) {
   .sec8grid{
