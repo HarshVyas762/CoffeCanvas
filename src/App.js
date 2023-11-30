@@ -36,8 +36,9 @@ import Sec4 from './component/Sec4';
 import Sec5 from './component/Sec5'
 import Sec6 from './component/Sec6';
 import Sec7 from './component/Sec7';
+import Sec8 from './component/Sec8';
 import Coffee from './Coffee';
-import Loader from './Loader'
+import Loader from './Loader';
 
 
 function Image(props) {
@@ -140,12 +141,12 @@ function App() {
                     <Pages />
                   </Scroll>
                   <Scroll html>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '-75vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '25vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '125vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '225vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '325vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '425vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '80vh', left: '-75vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '80vh', left: '25vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '80vh', left: '125vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '80vh', left: '225vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '80vh', left: '325vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '80vh', left: '425vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
                   </Scroll>
                 </ScrollControls>
                 <Preload />
@@ -321,12 +322,14 @@ function App() {
               <span id="abouttext">Community & Creativity</span>
               <p id='sec4_title'>Where Art  Meets Coffee Culture</p>
               <p id='sec4_desc'>The Coffee Canvas is more than a coffee house; it's a vibrant gallery of creativity and connection. Open mic nights and collaborative events transform our space into a haven for inspiration. Here, the scent of fresh coffee mingles with the aroma of artistic expression, making each visit a journey through art and flavour.</p>
-              <div className='col-lg-2 col-md-2 col-sm-12' style={{ display: 'flex', placeContent: 'space-between', fontSize: '20px', padding: '0px' }}>
+              <Sec8 />
+              {/* <div className='col-lg-2 col-md-2 col-sm-12' style={{ display: 'flex', placeContent: 'space-between', fontSize: '20px', padding: '0px' }}>
                 <p>All</p>
                 <p>Mumbai</p>
                 <p>Delhi</p>
-              </div>
-              <div className='sec8grid'>
+
+              </div> */}
+              {/* <div className='sec8grid'>
                 <img src={sec8img1} className='sec8img' alt='' />
 
                 <img src={sec8img2} className='sec8img' alt='' />
@@ -341,7 +344,7 @@ function App() {
 
                 <div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 

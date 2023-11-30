@@ -46,7 +46,9 @@ const Sec5 = () => {
     <div className={`sec5 ${isVisible ? 'visible' : ''}`} ref={sectionRef}>
       <div style={{ display: 'flex', placeContent: 'space-between', rowGap: '60px', flexWrap: 'wrap' }}>
           <div className='col-lg-5 col-md-5 col-sm-12' id="sec5col1">
-            <img src={sec5img} id="sec5img" alt='' />
+           <div style={{overflow:'hidden'}}> 
+            <img src={sec5img} id="sec5img" alt=''/>
+         </div>
           </div>
           <div className='col-lg-7 col-md-7 col-sm-12' style={{ display: 'flex', flexDirection: 'column', gap: '28px', paddingRight: '0px' }}>
             <p id='sec4_title'>Artistry in Every Cup</p>

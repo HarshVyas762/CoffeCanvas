@@ -52,7 +52,9 @@ const Sec6 = () => {
             <button id='subscribe'>Subscribe</button>
           </div>
           <div className='col-lg-3 col-md-5 col-sm-12 sec6col2' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            <img src={sec6img} style={{ width: '100%' }} alt=''/>
+            <div style={{overflow:'hidden'}}>
+            <img id='sec6img' src={sec6img} style={{ width: '100%' }} alt=''/>
+            </div>
             <div style={{ display: 'flex', gap: '30px' }}>
               <img src={dot} id="dot" alt='' />
               <p id="sec6sweet">Sweet Black Coffee</p>
