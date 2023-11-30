@@ -12,7 +12,7 @@ import '../App.css'
 
 function JustifiedExample() {
   return (
-    <Tabs defaultActiveKey="profile" id="justify-tab-example" className="mb-3" style={{border:'none'
+    <Tabs defaultActiveKey="profile" id="justify-tab-example" className="mb-3" style={{border:'none',gap:"30px"
     }}>
       <Tab eventKey="home" title="All">
         <TabContent>
