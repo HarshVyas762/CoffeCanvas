@@ -91,6 +91,7 @@ export function ScrollControls({
     el.style.height = '100%'
     el.style[horizontal ? 'overflowX' : 'overflowY'] = 'auto'
     el.style[horizontal ? 'overflowY' : 'overflowX'] = 'hidden'
+    el.style.mixBlendMode='overlay'
     el.style.top = '0px'
     el.style.left = '0px'
 

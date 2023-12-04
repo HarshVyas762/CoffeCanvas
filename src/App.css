@@ -6,6 +6,8 @@ body {
   font-family: 'Rancho', cursive;
 }
 
+.element::-webkit-scrollbar{ width: 0 ! important }
+
 
 * {
   box-sizing: border-box;
