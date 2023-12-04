@@ -40,27 +40,27 @@ const Sec6 = () => {
   }, [isVisible]);
 
   return (
-    <div className={`sec6 section ${isVisible ? 'visible' : ''}`} ref={sectionRef}>
-              <div className='container' style={{ display: 'flex', flexWrap: 'wrap', placeContent: 'space-around', rowGap: '50px' }}>
-          <div className='col-lg-7 col-md-6 col-sm-12 sec6col1' style={{ display: 'flex', flexDirection: 'column', rowGap: '30px' }}>
-            <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
-              <img src={line} style={{ width: '80px' }} alt='' />
-              <span id="abouttext">THE MOBILE APP</span>
-            </div>
-            <p id='sec4_title'>Never Run Out of Your Favorite Blend</p>
-            <p id='sec4_desc'>Don't miss out on the opportunity to elevate your daily coffee ritual. Download the Coffee Subscription App today and savor the convenience, the flavors, and the artistry that The Coffee Canvas has to offer. It's coffee, your way, and it's just a tap away.</p>
-            <button id='subscribe'>Subscribe</button>
+    <div className={`sec6 section ${isVisible ? 'visible' : ''}`} ref={sectionRef} style={{ overflow: 'hidden' }}>
+      <div className='container' style={{ display: 'flex', flexWrap: 'wrap', placeContent: 'space-around', rowGap: '50px' }}>
+        <div className='col-lg-7 col-md-6 col-sm-12 sec6col1' style={{ display: 'flex', flexDirection: 'column', rowGap: '30px' }}>
+          <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
+            <img src={line} style={{ width: '80px' }} alt='' />
+            <span id="abouttext">THE MOBILE APP</span>
           </div>
-          <div className='col-lg-3 col-md-5 col-sm-12 sec6col2' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            <div style={{overflow:'hidden'}}>
-            <img id='sec6img' src={sec6img} style={{ width: '100%' }} alt=''/>
-            </div>
-            <div style={{ display: 'flex', gap: '30px' }}>
-              <img src={dot} id="dot" alt='' />
-              <p id="sec6sweet">Sweet Black Coffee</p>
-            </div>
+          <p id='sec4_title'>Never Run Out of Your Favorite Blend</p>
+          <p id='sec4_desc'>Don't miss out on the opportunity to elevate your daily coffee ritual. Download the Coffee Subscription App today and savor the convenience, the flavors, and the artistry that The Coffee Canvas has to offer. It's coffee, your way, and it's just a tap away.</p>
+          <button id='subscribe'>Subscribe</button>
+        </div>
+        <div className='col-lg-3 col-md-5 col-sm-12 sec6col2' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <div style={{ overflow: 'hidden' }}>
+            <img id='sec6img' src={sec6img} style={{ width: '100%' }} alt='' />
+          </div>
+          <div style={{ display: 'flex', gap: '30px' }}>
+            <img src={dot} id="dot" alt='' />
+            <p id="sec6sweet">Sweet Black Coffee</p>
           </div>
         </div>
+      </div>
     </div>
   );
 };

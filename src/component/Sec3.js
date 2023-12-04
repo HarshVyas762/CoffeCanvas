@@ -41,7 +41,7 @@ const Sec3 = () => {
     }, [isVisible]);
 
   return (
-    <div className={`sec3 ${isVisible ? 'visible' : ''}`} ref={sectionRef}>
+    <div className={`sec3 ${isVisible ? 'visible' : ''}`} ref={sectionRef} style={{overflow:'hidden'}}>
       <div className='container'>
           <div style={{ display: 'flex', flexWrap: 'wrap', rowGap: '60px', placeContent: 'space-between', justifyContent: 'center', alignSelf: 'center', padding: '100px 0' }}>
             <div className='col-lg-3 col-md-5 col-sm-12 sec2box'>

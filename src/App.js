@@ -141,12 +141,12 @@ function App() {
                     <Pages />
                   </Scroll>
                   <Scroll html>
-                    <h1 style={{ position: 'absolute', top: '80vh', left: '-75vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '80vh', left: '25vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
-                    <h1 style={{ position: 'absolute', top: '80vh', left: '125vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '80vh', left: '225vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
-                    <h1 style={{ position: 'absolute', top: '80vh', left: '325vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '80vh', left: '425vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '-75vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '25vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '125vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '225vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '325vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '425vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
                   </Scroll>
                 </ScrollControls>
                 <Preload />
@@ -421,6 +421,20 @@ function App() {
                 </button>
               </div>
             </div>
+          </div>
+
+          <div className='test'>
+                <div style={{display: 'flex', placeContent:'space-between', marginTop:'20px',marinLeft:'30px', marginLeft:'40px',marginRight:'20px',paddingTop:'40px'}}>
+                  <div style={{display:'flex', flexDirection:'column', gap:'30px', placeContent:'space-between', textAlign:'left', textDecoration:'underline'}}>
+                  <p>sub1</p>
+                  <p>sub2</p>
+                  </div>
+                  <div>
+                  <p>sub3</p>
+                  <p>sub4</p>
+                  <p>sub5</p>
+                  </div>
+                </div>
           </div>
 
           <div className='footer'>

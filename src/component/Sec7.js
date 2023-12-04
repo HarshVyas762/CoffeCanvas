@@ -41,12 +41,12 @@ const Sec7 = () => {
   }, [isVisible]);
 
   return (
-    <div className={`sec7 section ${isVisible ? 'visible' : ''}`} ref={sectionRef}>
+    <div className={`sec7 section ${isVisible ? 'visible' : ''}`} ref={sectionRef} style={{ overflow: 'hidden' }}>
       <div className='container'>
         <div className='col-lg-7 col-md-12 col-sm-12 sec7col1' style={{ display: 'flex', paddingLeft: '0px' }}>
           <div className='col-lg-6 col-md-6' id='sec7subdiv1' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            <div style={{overflow:'hidden'}}>
-            <img src={sec7img1} id="sec7img1" alt='' />
+            <div style={{ overflow: 'hidden' }}>
+              <img src={sec7img1} id="sec7img1" alt='' />
             </div>
             <div className='dotdiv'>
               <img src={dot} id="dot" alt='' />
@@ -54,8 +54,8 @@ const Sec7 = () => {
             </div>
           </div>
           <div className='col-lg-6 col-md-6' id='sec7subdiv2' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            <div style={{overflow:'hidden'}}>
-            <img src={sec7img2} id="sec7img2" alt='' />
+            <div style={{ overflow: 'hidden' }}>
+              <img src={sec7img2} id="sec7img2" alt='' />
             </div>
             <div className='dotdiv'>
               <img src={dot} id="dot" alt='' />
