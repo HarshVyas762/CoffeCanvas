@@ -40,7 +40,6 @@ import Sec8 from './component/Sec8';
 import Coffee from './Coffee';
 import Loader from './Loader';
 
-
 function Image(props) {
   const ref = useRef()
   const group = useRef()
@@ -439,7 +438,7 @@ function App() {
                   </span>
                 </div>
                 <div className='col-lg-5 col-md-5 col-sm-12 coffeecol' style={{ textAlign: '-webkit-center', alignSelf: 'center' }}>
-                <div id="logo" style={{color:'white'}}>TheCoffeeCanvas</div>
+                <div id="logo" style={{color:'white',fontSize:'4rem'}}>TheCoffeeCanvas</div>
                   {/* <Coffee /> */}
                 </div>
               </div>

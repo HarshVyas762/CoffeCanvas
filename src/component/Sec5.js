@@ -3,6 +3,9 @@ import '../App.css';
 import artistic from '../img/icon-2_1920X 1 (1).png';
 import cultural from '../img/icon-4_1920X 1.png';
 import sec5img from '../img/sec5img.png';
+import Coffee from '../Coffee';
+import coffeebot from '../img/coffee.gif'
+
 
 
 
@@ -55,7 +58,7 @@ const Sec5 = () => {
           <p id='sec4_desc'>At The Coffee Canvas, we're not just making coffee; we're painting a masterpiece. Our beans are carefully sourced from around the globe, each telling its own story through its unique flavors. Like a skilled artist, our baristas use their expertise to create a symphony of flavors in every cup.</p>
           <div style={{ display: 'flex', rowGap: '50px', flexWrap: 'wrap', marginTop: '40px' }}>
             <div className='col-lg-6 col-md-6 col-sm-12 sec5box' style={{ display: 'flex', gap: '20px' }}>
-              <div style={{ alignSelf: 'center' }}><img src={artistic} alt=''></img></div>
+              <div style={{ alignSelf: 'center' }}><img src={coffeebot} alt=''></img></div>
               <div><h5 id='sec5_boxtitle'>World’s Best Beans</h5>
                 <p id="sec5_boxdesc">We partner with passionate, quality-focused farmers worldwide to craft our exceptional blends.</p>
               </div>
