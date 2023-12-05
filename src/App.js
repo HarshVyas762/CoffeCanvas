@@ -439,7 +439,8 @@ function App() {
                   </span>
                 </div>
                 <div className='col-lg-5 col-md-5 col-sm-12 coffeecol' style={{ textAlign: '-webkit-center', alignSelf: 'center' }}>
-                  <Coffee />
+                <div id="logo" style={{color:'white'}}>TheCoffeeCanvas</div>
+                  {/* <Coffee /> */}
                 </div>
               </div>
               <div className='div2'>
