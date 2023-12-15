@@ -79,7 +79,6 @@ const Sec5 = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
