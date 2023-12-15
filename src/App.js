@@ -439,7 +439,7 @@ function App() {
                   </span>
                 </div>
                 <div className='col-lg-5 col-md-5 col-sm-12 coffeecol' style={{ textAlign: '-webkit-center', alignSelf: 'center' }}>
-                <div id="logo"> <img src={footerlogo} /></div>
+                <div id="logo" style={{filter: 'drop-shadow(2px 2px 2px #000)'}}> <img src={footerlogo} /></div>
                   {/* <Coffee /> */}
                 </div>
               </div>
