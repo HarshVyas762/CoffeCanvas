@@ -39,6 +39,8 @@ import Sec7 from './component/Sec7';
 import Sec8 from './component/Sec8';
 import Coffee from './Coffee';
 import Loader from './Loader';
+import logo from './img/Logo.png'
+import footerlogo from './img/TCC Logo White.png'
 
 function Image(props) {
   const ref = useRef()
@@ -118,13 +120,12 @@ function App() {
           <div className='sec1'>
             <div className='container nav'>
               <Sidebar />
-              <div className='col-lg-3' id="logo">TheCoffeeCanvas</div>
-              <div className='col-lg-5 menu-link' style={{ placeContent: 'space-between', alignItems: 'center', color: 'white' }}>
+              <div className='col-lg-3' id="logo"><img src={logo} /></div>
+              <div className='col-lg-5 menu-link' style={{ gap:'50px', alignItems: 'center', color: 'white' }}>
+                <p>About Us</p>
+                <p>Our App</p>
                 <p>Menu</p>
-                <p>Service</p>
-                <p>Location</p>
-                <p>About</p>
-                <p>Career</p>
+                <p>Community</p>
               </div>
               <div className='col-lg-2 menu-btn'>
                 <button id="headbtn">Contact</button>
@@ -438,7 +439,7 @@ function App() {
                   </span>
                 </div>
                 <div className='col-lg-5 col-md-5 col-sm-12 coffeecol' style={{ textAlign: '-webkit-center', alignSelf: 'center' }}>
-                <div id="logo" style={{color:'white',fontSize:'4rem'}}>TheCoffeeCanvas</div>
+                <div id="logo"> <img src={footerlogo} /></div>
                   {/* <Coffee /> */}
                 </div>
               </div>

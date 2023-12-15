@@ -42,8 +42,8 @@ p {
 /* sec1 */
 
 .sec1 {
-  /* background: linear-gradient(90deg,#fff 70%,#3F2305 0); */
-  background-color: #3F2305;
+  background: linear-gradient(90deg,#fff 70%,#3F2305 0);
+  /* background-color: #3F2305; */
 }
 
 .nav {
@@ -83,11 +83,12 @@ p {
 .menu-link p {
   transition-duration: 0.3s;
   cursor: pointer;
+  color: #3F2305;
 }
-
+/* 
 .menu-link p:hover {
   border-bottom: 1px solid #fff;
-}
+} */
 
 #headbtn {
   display: flex;
@@ -113,6 +114,9 @@ p {
 
 /* sec1 */
 
+.sec2{
+  background: linear-gradient(90deg,#fff 70%,#3F2305 0);
+}
 
 /* SEC3 */
 
@@ -663,7 +667,7 @@ p {
   background: #3f2305;
   padding-top: clamp(40px, 50%, 70px);
   background-repeat: no-repeat;
-  color:white;
+  color :#F2EAD3;
   margin-top: clamp(100px, 82%, 170px);
   background-size: cover;
 }
