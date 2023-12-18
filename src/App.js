@@ -39,6 +39,7 @@ import Sec7 from './component/Sec7';
 import Sec8 from './component/Sec8';
 import Coffee from './Coffee';
 import Loader from './Loader';
+import Load from './Load';
 import logo from './img/Logo.png'
 import footerlogo from './img/TCC Logo White.png'
 import { Link as ScrollLink, Element } from "react-scroll";
@@ -115,7 +116,7 @@ function App() {
 
       {loading ? (
         <div className="loading">
-          <Loader />
+          <Load />
         </div>
       ) : (
         <>
@@ -158,6 +159,7 @@ function App() {
               </div>
             </div>
           </div>
+
 
           <div className='sec2'>
             <Canvas gl={{ antialias: false }} dpr={[1, 1.5]} style={{ height: '700px' }}>
