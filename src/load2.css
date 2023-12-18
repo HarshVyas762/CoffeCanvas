@@ -157,7 +157,12 @@
     }
   }
   
-  
-  
+  @media (max-width:800px)
+  {
+    .coffee-cup {
+        width: 150px;
+        height: 140px;
+  }
+  }  
   
   

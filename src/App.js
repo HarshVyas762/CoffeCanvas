@@ -16,12 +16,6 @@ import img4 from './img/img4.jpg';
 import img5 from './img/img5.jpg';
 import img6 from './img/img6.jpg';
 import line from './img/Rectangle 74.svg';
-import sec8img1 from './img/sec8img1.png'
-import sec8img2 from './img/sec8img2.png'
-import sec8img3 from './img/sec8img3.png'
-import sec8img4 from './img/sec8img4.png'
-import sec8img5 from './img/sec8img5.png'
-import sec8img6 from './img/sec8img6.png'
 import test1 from './img/test1.png'
 import test2 from './img/test2.jpg'
 import quotes from './img/quotes.svg'
@@ -37,8 +31,6 @@ import Sec5 from './component/Sec5'
 import Sec6 from './component/Sec6';
 import Sec7 from './component/Sec7';
 import Sec8 from './component/Sec8';
-import Coffee from './Coffee';
-import Loader from './Loader';
 import Load from './Load';
 import logo from './img/Logo.png'
 import footerlogo from './img/TCC Logo White.png'
@@ -86,10 +78,7 @@ function Pages() {
 }
 
 function App() {
-
-
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -124,35 +113,35 @@ function App() {
             <div className='container nav'>
               <Sidebar />
               <div className='col-lg-3' id="logo"><img src={logo} /></div>
-              <div className='col-lg-5 menu-link' style={{ gap:'50px', alignItems: 'center', color: 'white' }}>
+              <div className='col-lg-5 menu-link' style={{ gap: '50px', alignItems: 'center', color: 'white' }}>
                 <p> <ScrollLink
-                    to="sec4"
-                    smooth={true}
-                    duration={500}
-                    offset={-50}>
-                    About Us
-                  </ScrollLink></p>
+                  to="sec4"
+                  smooth={true}
+                  duration={500}
+                  offset={-50}>
+                  About Us
+                </ScrollLink></p>
                 <p> <ScrollLink
-                    to="sec6"
-                    smooth={true}
-                    duration={500}
-                    offset={-150}>
-                    Our App
-                  </ScrollLink></p>
+                  to="sec6"
+                  smooth={true}
+                  duration={500}
+                  offset={-150}>
+                  Our App
+                </ScrollLink></p>
                 <p> <ScrollLink
-                    to="sec7"
-                    smooth={true}
-                    duration={500}
-                    offset={-70}>
-                    Menu
-                  </ScrollLink></p>
+                  to="sec7"
+                  smooth={true}
+                  duration={500}
+                  offset={-70}>
+                  Menu
+                </ScrollLink></p>
                 <p> <ScrollLink
-                    to="sec8"
-                    smooth={true}
-                    duration={500}
-                    offset={0}>
-                    Community
-                  </ScrollLink></p>
+                  to="sec8"
+                  smooth={true}
+                  duration={500}
+                  offset={0}>
+                  Community
+                </ScrollLink></p>
               </div>
               <div className='col-lg-2 menu-btn'>
                 <button id="headbtn">Contact</button>
@@ -169,12 +158,12 @@ function App() {
                     <Pages />
                   </Scroll>
                   <Scroll html>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '-75vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '25vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '125vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '225vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '325vw', fontSize: '5rem', color: 'white' }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '425vw', fontSize: '5rem', color: 'white' }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '-75vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '25vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black'  }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '125vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black'  }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '225vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black'  }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '325vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black'  }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '425vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black'  }}>Canvas</h1>
                   </Scroll>
                 </ScrollControls>
                 <Preload />
@@ -467,7 +456,7 @@ function App() {
                   </span>
                 </div>
                 <div className='col-lg-5 col-md-5 col-sm-12 coffeecol' style={{ textAlign: '-webkit-center', alignSelf: 'center' }}>
-                <div id="logo" style={{filter: 'drop-shadow(2px 2px 2px #000)'}}> <img src={footerlogo} /></div>
+                  <div id="logo" style={{ filter: 'drop-shadow(2px 2px 2px #000)' }}> <img src={footerlogo} /></div>
                   {/* <Coffee /> */}
                 </div>
               </div>
