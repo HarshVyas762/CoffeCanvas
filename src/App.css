@@ -3,7 +3,7 @@ body {
 }
 
 body {
-  font-family: 'Rancho', cursive;
+  font-family: 'Rancho', 'Raleway';
 }
 
 .element::-webkit-scrollbar{ width: 0 ! important }
@@ -621,6 +621,7 @@ p {
   background-repeat: no-repeat !important;
   width: 63px !important;
   height: 63px !important;
+  opacity: 1;
 }
 
 .carousel-control-prev-icon {
@@ -628,6 +629,7 @@ p {
   background-repeat: no-repeat !important;
   width: 63px !important;
   height: 63px !important;
+  opacity: 1;
 }
 
 .carousel-control-next,
@@ -751,9 +753,8 @@ p {
 
 @media(max-width:700px) {
 
-  .logo img{
-  width: 190px;
-  
+  #logo img{
+  width: 200px;
   }
 
   #sec3img {
@@ -835,6 +836,10 @@ p {
   #sec4_boxtitle {
     font-size: 22px;
   }
+
+  .sec2 {
+    background: linear-gradient(90deg,#fff 70%,#3F2305 0);
+}
 
   .sec2_title {
     font-size: 22px;
@@ -931,7 +936,10 @@ p {
   .coffeecol{
     margin-top: 90px;
     margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
   }
+
 }
 
 /* 800px */
