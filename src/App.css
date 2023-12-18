@@ -751,6 +751,11 @@ p {
 
 @media(max-width:700px) {
 
+  .logo img{
+  width: 190px;
+  
+  }
+
   #sec3img {
     width: -webkit-fill-available;
   }
