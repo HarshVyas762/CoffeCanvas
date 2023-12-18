@@ -293,6 +293,7 @@ p {
   background: url('./img/sec5bg.png');
   opacity: 0;
   transform: translateY(50px);
+  background-repeat: no-repeat;
   transition: opacity 1s, transform 1s;
 }
 
@@ -522,6 +523,7 @@ p {
 
 .sec8 {
   background: url('./img/sec8bg.png');
+  background-repeat: no-repeat;
 }
 
 .sec8grid {
@@ -578,6 +580,7 @@ p {
   background: url('./img/sec9bg.png');
   height: 650px;
   border-bottom: 100px solid white;
+  background-repeat: no-repeat;
 }
 
 #carouselExampleFade {

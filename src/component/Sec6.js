@@ -45,7 +45,7 @@ const Sec6 = () => {
         <div className='col-lg-7 col-md-6 col-sm-12 sec6col1' style={{ display: 'flex', flexDirection: 'column', rowGap: '30px' }}>
           <div style={{ display: 'flex', gap: '20px', justifyContent: 'start' }}>
             <img src={line} style={{ width: '80px' }} alt='' />
-            <span id="abouttext">THE MOBILE APP</span>
+            <span id="abouttext">OUR APP</span>
           </div>
           <p id='sec4_title'>Never Run Out of Your Favorite Blend</p>
           <p id='sec4_desc'>Don't miss out on the opportunity to elevate your daily coffee ritual. Download the Coffee Subscription App today and savor the convenience, the flavors, and the artistry that The Coffee Canvas has to offer. It's coffee, your way, and it's just a tap away.</p>

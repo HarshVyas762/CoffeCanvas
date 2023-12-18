@@ -41,6 +41,7 @@ import Coffee from './Coffee';
 import Loader from './Loader';
 import logo from './img/Logo.png'
 import footerlogo from './img/TCC Logo White.png'
+import { Link as ScrollLink, Element } from "react-scroll";
 
 function Image(props) {
   const ref = useRef()
@@ -123,10 +124,34 @@ function App() {
               <Sidebar />
               <div className='col-lg-3' id="logo"><img src={logo} /></div>
               <div className='col-lg-5 menu-link' style={{ gap:'50px', alignItems: 'center', color: 'white' }}>
-                <p>About Us</p>
-                <p>Our App</p>
-                <p>Menu</p>
-                <p>Community</p>
+                <p> <ScrollLink
+                    to="sec4"
+                    smooth={true}
+                    duration={500}
+                    offset={-50}>
+                    About Us
+                  </ScrollLink></p>
+                <p> <ScrollLink
+                    to="sec6"
+                    smooth={true}
+                    duration={500}
+                    offset={-150}>
+                    Our App
+                  </ScrollLink></p>
+                <p> <ScrollLink
+                    to="sec7"
+                    smooth={true}
+                    duration={500}
+                    offset={-70}>
+                    Menu
+                  </ScrollLink></p>
+                <p> <ScrollLink
+                    to="sec8"
+                    smooth={true}
+                    duration={500}
+                    offset={0}>
+                    Community
+                  </ScrollLink></p>
               </div>
               <div className='col-lg-2 menu-btn'>
                 <button id="headbtn">Contact</button>
