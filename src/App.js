@@ -149,7 +149,6 @@ function App() {
             </div>
           </div>
 
-
           <div className='sec2'>
             <Canvas gl={{ antialias: false }} dpr={[1, 1.5]} style={{ height: '700px' }}>
               <Suspense fallback={null}>
@@ -484,6 +483,8 @@ function App() {
                     <p className='subtext'>Contact Us</p>
                   </div>
                 </div>
+
+                
                 <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
                   <p>Follow us</p>
                   <br></br>

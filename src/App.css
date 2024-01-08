@@ -724,6 +724,28 @@ p {
 
 /* Footer */
 
+
+/* >1200 */
+
+@media (min-width:1200px)
+{
+  
+  .sec5 {
+  background-size: cover;
+}
+
+.sec8 {
+background-size: cover;
+}
+
+.sec9 {
+  background-size: cover;
+  }
+
+}
+  
+/* >1200 */
+
 /* 1100px to 800px */
 
 @media (min-width:700px) and (max-width:1100px) {
@@ -946,3 +968,4 @@ p {
 }
 
 /* 800px */
+
