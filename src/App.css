@@ -666,6 +666,15 @@ p {
 
 /* SEC9 */
 
+
+/* Gallery */
+
+/* .gallery{
+  margin-top: 100px;
+} */
+
+/* Gallery */
+
 /* Footer */
 
 .footer {
@@ -673,7 +682,7 @@ p {
   padding-top: clamp(40px, 50%, 70px);
   background-repeat: no-repeat;
   color :#F2EAD3;
-  margin-top: clamp(100px, 82%, 170px);
+  /* margin-top: clamp(100px, 82%, 170px); */
   background-size: cover;
 }
 

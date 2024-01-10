@@ -6,6 +6,8 @@ import { Suspense, useRef, useEffect, useState } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Preload, Image as ImageImpl } from '@react-three/drei';
 import { ScrollControls, Scroll, useScroll } from './ScrollControls.tsx';
+import { Environment } from '@react-three/drei';
+import { Frames } from './component/Frames';
 import trip1 from './img/trip1.jpg';
 import trip2 from './img/trip2.jpg';
 import trip3 from './img/trip3.jpg';
@@ -35,6 +37,57 @@ import Load from './Load';
 import logo from './img/Logo.png'
 import footerlogo from './img/TCC Logo White.png'
 import { Link as ScrollLink, Element } from "react-scroll";
+import { Text, MeshReflectorMaterial } from "@react-three/drei"; // Import MeshReflectorMaterial
+import image1 from "./img/Frame1.jpg";
+import image2 from "./img/Frame2.png";
+import image3 from "./img/Frame3.png";
+import image4 from "./img/Frame4.jpg";
+import image5 from "./img/Frame5.png";
+import image6 from "./img/Frame6.webp";
+import image7 from "./img/Frame7.webp";
+import image8 from "./img/Frame8.webp";
+import image9 from "./img/Frame9.webp";
+
+const images = [
+  // Front
+  { position: [0, 0, 1.5], rotation: [0, 0, 0], url: image1 },
+  // Back
+  { position: [-0.8, 0, -0.6], rotation: [0, 0, 0], url: image2 },
+  { position: [0.8, 0, -0.6], rotation: [0, 0, 0], url: image3 },
+  // Left
+  {
+    position: [-1.75, 0, 0.25],
+    rotation: [0, Math.PI / 2.5, 0],
+    url: image4,
+  },
+  {
+    position: [-2.15, 0, 1.5],
+    rotation: [0, Math.PI / 2.5, 0],
+    url: image5,
+  },
+  {
+    position: [-2, 0, 2.75],
+    rotation: [0, Math.PI / 2.5, 0],
+    url: image6,
+  },
+  // Right
+  {
+    position: [1.75, 0, 0.25],
+    rotation: [0, -Math.PI / 2.5, 0],
+    url: image7,
+  },
+  {
+    position: [2.15, 0, 1.5],
+    rotation: [0, -Math.PI / 2.5, 0],
+    url: image8,
+  },
+  {
+    position: [2, 0, 2.75],
+    rotation: [0, -Math.PI / 2.5, 0],
+    url: image9,
+  },
+];
+
 
 function Image(props) {
   const ref = useRef()
@@ -84,6 +137,8 @@ function App() {
       setLoading(false);
     }, 2000);
   }, []);
+
+
 
   return (
     <div className="App">
@@ -158,11 +213,11 @@ function App() {
                   </Scroll>
                   <Scroll html>
                     <h1 style={{ position: 'absolute', top: '40vh', left: '-75vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black' }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '25vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black'  }}>Canvas</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '125vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black'  }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '225vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black'  }}>Canvas</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '325vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black'  }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '425vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black'  }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '25vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black' }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '125vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '225vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black' }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '325vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '425vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black' }}>Canvas</h1>
                   </Scroll>
                 </ScrollControls>
                 <Preload />
@@ -364,7 +419,7 @@ function App() {
             </div>
           </div>
 
-          <div className='sec9'>
+          {/* <div className='sec9'>
             <div className='container'>
               <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <p id="sec4_title" style={{ textAlign: 'left' }}>Where Art  Meets Coffee Culture</p>
@@ -437,7 +492,34 @@ function App() {
                 </button>
               </div>
             </div>
+          </div> */}
+
+          <div className='gallery'>
+            <Canvas dpr={[1, 1.5]} camera={{ fov: 70, position: [0, 2, 15] }} style={{ width: "100%", height: '600px' }}>
+              <color attach="background" args={["#191920"]} />
+              <fog attach="fog" args={["#191920", 0, 15]} />
+              <group position={[0, -0.5, 0]}>
+                <Frames images={images} />
+                <mesh rotation={[-Math.PI / 2, 0, 0]}>
+                  <planeGeometry args={[50, 50]} />
+                  <MeshReflectorMaterial
+                    blur={[300, 100]}
+                    resolution={2048}
+                    mixBlur={1}
+                    mixStrength={80}
+                    roughness={1}
+                    depthScale={1.2}
+                    minDepthThreshold={0.4}
+                    maxDepthThreshold={1.4}
+                    color="#050505"
+                    metalness={0.5}
+                  />
+                </mesh>
+              </group>
+              <Environment preset="city" />
+            </Canvas>
           </div>
+
 
           <div className='footer'>
             <div className='container'>
@@ -484,7 +566,7 @@ function App() {
                   </div>
                 </div>
 
-                
+
                 <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
                   <p>Follow us</p>
                   <br></br>

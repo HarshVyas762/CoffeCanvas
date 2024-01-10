@@ -6,13 +6,15 @@
     "@babel/cli": "^7.23.0",
     "@babel/core": "^7.23.3",
     "@babel/preset-env": "^7.23.3",
+    "@pmndrs/branding": "^0.0.8",
     "@react-three/drei": "^9.88.17",
     "@react-three/fiber": "^8.15.11",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "@types/three": "^0.133.0",
+    "@types/three": "^0.160.0",
     "bootstrap": "^5.3.2",
+    "maath": "^0.10.7",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
@@ -22,7 +24,9 @@
     "scripts": "^0.1.0",
     "styled-components": "^6.1.0",
     "three": "^0.158.0",
-    "web-vitals": "^2.1.4"
+    "uuid-by-string": "^4.0.0",
+    "web-vitals": "^2.1.4",
+    "wouter": "^2.12.1"
   },
   "scripts": {
     "start": "react-scripts start",
