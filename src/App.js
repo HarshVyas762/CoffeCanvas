@@ -388,12 +388,12 @@ function App() {
         </div>
       </div> */}
 
-          <div className='sec8 section' style={{ padding: '100px 0px' }}>
-            <div className='container' style={{ display: 'flex', flexDirection: 'column', gap: '30px', alignItems: 'center' }}>
+          {/* <div className='sec8 section' style={{ padding: '100px 0px' }}> */}
+            {/* <div className='container' style={{ display: 'flex', flexDirection: 'column', gap: '30px', alignItems: 'center' }}>
               <span id="abouttext">Community & Creativity</span>
               <p id='sec4_title'>Where Art  Meets Coffee Culture</p>
               <p id='sec4_desc'>The Coffee Canvas is more than a coffee house; it's a vibrant gallery of creativity and connection. Open mic nights and collaborative events transform our space into a haven for inspiration. Here, the scent of fresh coffee mingles with the aroma of artistic expression, making each visit a journey through art and flavour.</p>
-              <Sec8 />
+              <Sec8 /> */}
               {/* <div className='col-lg-2 col-md-2 col-sm-12' style={{ display: 'flex', placeContent: 'space-between', fontSize: '20px', padding: '0px' }}>
                 <p>All</p>
                 <p>Mumbai</p>
@@ -416,10 +416,36 @@ function App() {
                 <div>
                 </div>
               </div> */}
-            </div>
+            {/* </div> */}
+          {/* </div> */}
+
+          <div className='gallery'>
+            <Canvas dpr={[1, 1.5]} camera={{ fov: 70, position: [0, 2, 15] }} style={{ width: "100%", height: '600px' }}>
+              <color attach="background" args={["#191920"]} />
+              <fog attach="fog" args={["#191920", 0, 15]} />
+              <group position={[0, -0.5, 0]}>
+                <Frames images={images} />
+                <mesh rotation={[-Math.PI / 2, 0, 0]}>
+                  <planeGeometry args={[50, 50]} />
+                  <MeshReflectorMaterial
+                    blur={[300, 100]}
+                    resolution={2048}
+                    mixBlur={1}
+                    mixStrength={80}
+                    roughness={1}
+                    depthScale={1.2}
+                    minDepthThreshold={0.4}
+                    maxDepthThreshold={1.4}
+                    color="#050505"
+                    metalness={0.5}
+                  />
+                </mesh>
+              </group>
+              <Environment preset="city" />
+            </Canvas>
           </div>
 
-          {/* <div className='sec9'>
+          <div className='sec9'>
             <div className='container'>
               <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <p id="sec4_title" style={{ textAlign: 'left' }}>Where Art  Meets Coffee Culture</p>
@@ -492,32 +518,6 @@ function App() {
                 </button>
               </div>
             </div>
-          </div> */}
-
-          <div className='gallery'>
-            <Canvas dpr={[1, 1.5]} camera={{ fov: 70, position: [0, 2, 15] }} style={{ width: "100%", height: '600px' }}>
-              <color attach="background" args={["#191920"]} />
-              <fog attach="fog" args={["#191920", 0, 15]} />
-              <group position={[0, -0.5, 0]}>
-                <Frames images={images} />
-                <mesh rotation={[-Math.PI / 2, 0, 0]}>
-                  <planeGeometry args={[50, 50]} />
-                  <MeshReflectorMaterial
-                    blur={[300, 100]}
-                    resolution={2048}
-                    mixBlur={1}
-                    mixStrength={80}
-                    roughness={1}
-                    depthScale={1.2}
-                    minDepthThreshold={0.4}
-                    maxDepthThreshold={1.4}
-                    color="#050505"
-                    metalness={0.5}
-                  />
-                </mesh>
-              </group>
-              <Environment preset="city" />
-            </Canvas>
           </div>
 
 

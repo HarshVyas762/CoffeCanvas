@@ -581,6 +581,7 @@ p {
   height: 650px;
   border-bottom: 100px solid white;
   background-repeat: no-repeat;
+  padding-top: 100px;
 }
 
 #carouselExampleFade {
@@ -669,9 +670,9 @@ p {
 
 /* Gallery */
 
-/* .gallery{
+.gallery{
   margin-top: 100px;
-} */
+}
 
 /* Gallery */
 
@@ -682,7 +683,7 @@ p {
   padding-top: clamp(40px, 50%, 70px);
   background-repeat: no-repeat;
   color :#F2EAD3;
-  /* margin-top: clamp(100px, 82%, 170px); */
+  margin-top: clamp(100px, 82%, 170px);
   background-size: cover;
 }
 
