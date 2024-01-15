@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body {
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
@@ -51,8 +58,8 @@ p {
 /* sec1 */
 
 .sec1 {
-  background: -webkit-gradient(linear,left top, right top,color-stop(70%, #fff),color-stop(0, #3F2305));
   background: -o-linear-gradient(left,#fff 70%,#3F2305 0);
+  background: -webkit-gradient(linear,left top, right top,color-stop(70%, #fff),color-stop(0, #3F2305));
   background: linear-gradient(90deg,#fff 70%,#3F2305 0);
   /* background-color: #3F2305; */
 }
@@ -115,11 +122,19 @@ p {
   bottom: 0;
   left: 15px;
   width: 60px;
-  height: 3px;
+  height: 1px;
   background: #3F2305;
-  transform: scaleX(0);
-  transform-origin: right;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .menu-item1:hover {
@@ -127,8 +142,12 @@ p {
 }
 
 .menu-item1:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 .menu-item2::after {
@@ -139,9 +158,17 @@ p {
   width: 60px;
   height: 3px;
   background: #3F2305;
-  transform: scaleX(0);
-  transform-origin: right;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .menu-item2:hover {
@@ -149,8 +176,12 @@ p {
 }
 
 .menu-item2:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 .menu-item3::after {
@@ -161,9 +192,17 @@ p {
   width: 40px;
   height: 3px;
   background: #3F2305;
-  transform: scaleX(0);
-  transform-origin: right;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .menu-item3:hover {
@@ -171,8 +210,12 @@ p {
 }
 
 .menu-item3:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 .menu-item4::after {
@@ -183,9 +226,17 @@ p {
   width: 75px;
   height: 3px;
   background: #3F2305;
-  transform: scaleX(0);
-  transform-origin: right;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .menu-item4:hover {
@@ -193,8 +244,12 @@ p {
 }
 
 .menu-item4:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 /* .menu-link p:hover {
@@ -241,8 +296,8 @@ p {
 /* sec1 */
 
 .sec2{
-  background: -webkit-gradient(linear,left top, right top,color-stop(70%, #fff),color-stop(0, #3F2305));
   background: -o-linear-gradient(left,#fff 70%,#3F2305 0);
+  background: -webkit-gradient(linear,left top, right top,color-stop(70%, #fff),color-stop(0, #3F2305));
   background: linear-gradient(90deg,#fff 70%,#3F2305 0);
 }
 
@@ -1177,8 +1232,8 @@ background-size: cover;
   }
 
   .sec2 {
-    background: -webkit-gradient(linear,left top, right top,color-stop(70%, #fff),color-stop(0, #3F2305));
     background: -o-linear-gradient(left,#fff 70%,#3F2305 0);
+    background: -webkit-gradient(linear,left top, right top,color-stop(70%, #fff),color-stop(0, #3F2305));
     background: linear-gradient(90deg,#fff 70%,#3F2305 0);
 }
 

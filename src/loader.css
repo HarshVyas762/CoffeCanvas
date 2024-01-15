@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .loader_cup {
 	width: 200px;
 	height: 150px;
@@ -5,11 +12,36 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	border-radius: 10px 10px 60px 60px;
 	background: url(https://i.postimg.cc/76GJvK5x/coffee.png);
 	background-repeat: repeat-x;
-	animation: fill 3s infinite;
+	-webkit-animation: fill 3s infinite;
+	        animation: fill 3s infinite;
+}
+
+@-webkit-keyframes fill {
+	0% {
+		background-position: 0 140px;
+	}
+
+	20% {
+		background-position: -450px 100px;
+	}
+
+	40% {
+		background-position: -900px 50px;
+	}
+
+	80% {
+		background-position: -1350px -50px;
+	}
+
+	100% {
+		background-position: 0 140px;
+	}
 }
 
 @keyframes fill {
