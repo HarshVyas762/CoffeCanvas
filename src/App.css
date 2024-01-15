@@ -106,10 +106,103 @@ p {
   cursor: pointer;
   color: #3F2305;
 }
-/* 
-.menu-link p:hover {
-  border-bottom: 1px solid #fff;
+
+/* menu_link_hover */
+
+.menu-item1::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 15px;
+  width: 60px;
+  height: 3px;
+  background: #3F2305;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.menu-item1:hover {
+  color: #95a5a6;
+}
+
+.menu-item1:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.menu-item2::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 125px;
+  width: 60px;
+  height: 3px;
+  background: #3F2305;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.menu-item2:hover {
+  color: #95a5a6;
+}
+
+.menu-item2:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.menu-item3::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 232px;
+  width: 40px;
+  height: 3px;
+  background: #3F2305;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.menu-item3:hover {
+  color: #95a5a6;
+}
+
+.menu-item3:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.menu-item4::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 320px;
+  width: 75px;
+  height: 3px;
+  background: #3F2305;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.menu-item4:hover {
+  color: #95a5a6;
+}
+
+.menu-item4:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* .menu-link p:hover {
+  border-bottom: 2px solid #3f2305;
+  transition-duration: 0.3s;
 } */
+
+/* menu_link_hover */
 
 #headbtn {
   display: -webkit-box;

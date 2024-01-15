@@ -170,7 +170,8 @@ function App() {
               <div className='col-lg-3' id="logo"><img src={logo} /></div>
               <div className='col-lg-5 menu-link' style={{ gap: '50px', alignItems: 'center', color: 'white' }}>
                 <p> <ScrollLink
-                  to="sec4"
+                  to="sec4" 
+                  class="menu-item1"
                   smooth={true}
                   duration={500}
                   offset={-50}>
@@ -178,6 +179,7 @@ function App() {
                 </ScrollLink></p>
                 <p> <ScrollLink
                   to="sec6"
+                  class="menu-item2"
                   smooth={true}
                   duration={500}
                   offset={-150}>
@@ -185,6 +187,7 @@ function App() {
                 </ScrollLink></p>
                 <p> <ScrollLink
                   to="sec7"
+                  class="menu-item3"
                   smooth={true}
                   duration={500}
                   offset={-70}>
@@ -192,6 +195,7 @@ function App() {
                 </ScrollLink></p>
                 <p> <ScrollLink
                   to="sec8"
+                  class="menu-item4"
                   smooth={true}
                   duration={500}
                   offset={0}>
