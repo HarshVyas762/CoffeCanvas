@@ -421,7 +421,7 @@ function App() {
 
           <div className='gallery'>
             <Canvas dpr={[1, 1.5]} camera={{ fov: 70, position: [0, 2, 15] }} style={{ width: "100%", height: '600px' }}>
-              <color attach="background" args={["#191920"]} />
+              <color attach="background" args={["#3f2305"]} />
               <fog attach="fog" args={["#191920", 0, 15]} />
               <group position={[0, -0.5, 0]}>
                 <Frames images={images} />

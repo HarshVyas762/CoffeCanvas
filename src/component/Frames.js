@@ -25,33 +25,33 @@ const images = [
   { position: [0.8, 0, -0.6], rotation: [0, 0, 0], url: image3 },
   // Left
   {
-    position: [-1.75, 0, 0.25],
+    position: [-2, 0, 0.25],
     rotation: [0, Math.PI / 2.5, 0],
     url: image4,
   },
   {
-    position: [-2.15, 0, 1.5],
+    position: [-2.55, 0, 1.5],
     rotation: [0, Math.PI / 2.5, 0],
     url: image5,
   },
   {
-    position: [-2, 0, 2.75],
+    position: [-2.95, 0, 2.75],
     rotation: [0, Math.PI / 2.5, 0],
     url: image6,
   },
   // Right
   {
-    position: [1.75, 0, 0.25],
+    position: [1.95, 0, 0.25],
     rotation: [0, -Math.PI / 2.5, 0],
     url: image7,
   },
   {
-    position: [2.15, 0, 1.5],
+    position: [2.35, 0, 1.5],
     rotation: [0, -Math.PI / 2.5, 0],
     url: image8,
   },
   {
-    position: [2, 0, 2.75],
+    position: [2.75, 0, 2.75],
     rotation: [0, -Math.PI / 2.5, 0],
     url: image9,
   },
