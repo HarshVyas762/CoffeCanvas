@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Sidebar.css */
 
 .sidebar {
@@ -6,12 +13,22 @@
   width: 250px;
   height: 100%;
   background-color: #fff;
+  -webkit-transition: left 0.3s, width 0.3s, -webkit-transform 0.3s;
+  transition: left 0.3s, width 0.3s, -webkit-transform 0.3s;
+  -o-transition: left 0.3s, transform 0.3s, width 0.3s;
   transition: left 0.3s, transform 0.3s, width 0.3s;
+  transition: left 0.3s, transform 0.3s, width 0.3s, -webkit-transform 0.3s;
   /* Add width for smooth sidebar width transition */
-  transform-origin: top right;
+  -webkit-transform-origin: top right;
+      -ms-transform-origin: top right;
+          transform-origin: top right;
   /* Set the transform origin to the top right corner */
-  transform: scaleX(0);
-  transition-duration: 1s;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .sidebar.open {
@@ -19,10 +36,21 @@
   opacity: 1;
   width: -webkit-fill-available;
   z-index: 999999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: left 1s, width 1s, -webkit-transform 1s;
+  transition: left 1s, width 1s, -webkit-transform 1s;
+  -o-transition: left 1s, transform 1s, width 1s;
   transition: left 1s, transform 1s, width 1s;
-  transform: scaleX(1);
+  transition: left 1s, transform 1s, width 1s, -webkit-transform 1s;
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .sidebar.open .bar {
@@ -31,9 +59,16 @@
 
 .sidebar-toggle {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 40px;
   padding: 10px;
   cursor: pointer;
@@ -41,7 +76,9 @@
   top: 26px;
   left: 85vw;
   z-index: 999999999;
-  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .bar {
@@ -49,6 +86,8 @@
   opacity: 1;
   height: 3px;
   background-color: #fff;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
   /* Add background-color transition for smooth color change */
 }
@@ -57,9 +96,14 @@
   list-style: none;
   padding: 0px;
   margin: 90px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 23px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   color: #432a24;
   gap: 10px;
@@ -82,16 +126,22 @@
 /* Media query for mobile responsiveness */
 @media (max-width: 768px) {
   .sidebar {
-    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
     right: 0px;
   }
 
   .sidebar.open {
     right: 0;
-    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
   }
 
   .sidebar-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
