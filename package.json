@@ -6,6 +6,7 @@
     "@babel/cli": "^7.23.0",
     "@babel/core": "^7.23.3",
     "@babel/preset-env": "^7.23.3",
+    "@emailjs/browser": "^3.12.1",
     "@pmndrs/branding": "^0.0.8",
     "@react-three/drei": "^9.88.17",
     "@react-three/fiber": "^8.15.11",

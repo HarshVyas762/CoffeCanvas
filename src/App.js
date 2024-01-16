@@ -34,8 +34,8 @@ import Sec6 from './component/Sec6';
 import Sec7 from './component/Sec7';
 import Sec8 from './component/Sec8';
 import Load from './Load';
-import logo from './img/Logo.png'
-import footerlogo from './img/TCC Logo White.png'
+import logo from './img/coffelogo.png'
+import footerlogo from './img/coffeefooterlogo.png'
 import { Link as ScrollLink, Element } from "react-scroll";
 import { Text, MeshReflectorMaterial } from "@react-three/drei"; // Import MeshReflectorMaterial
 import image1 from "./img/Frame1.jpg";
@@ -89,6 +89,7 @@ const images = [
 ];
 
 
+
 function Image(props) {
   const ref = useRef()
   const group = useRef()
@@ -139,6 +140,33 @@ function App() {
   }, []);
 
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Add a scroll event listener
+    const handleScroll = () => {
+      if (window.pageYOffset > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Empty dependency array means this effect runs once when the component mounts
+
+  const scrollToTop = () => {
+    // Scroll to the top smoothly
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <div className="App">
@@ -164,11 +192,17 @@ function App() {
         </div>
       ) : (
         <>
+
+<button
+      id="topbutton"
+      style={{ opacity: isVisible ? 1 : 0 }}
+      onClick={scrollToTop} />
+
           <div className='sec1'>
             <div className='container nav'>
               <Sidebar />
-              <div className='col-lg-3' id="logo"><img src={logo} /></div>
-              <div className='col-lg-5 menu-link' style={{ gap: '50px', alignItems: 'center', color: 'white' }}>
+              {/* <div className='col-lg-3' id="logo"><img src={logo} /></div> */}
+              <div className='col-lg-8 menu-link' style={{ gap: '50px', alignItems: 'center', color: 'white',placeContent:'center' }}>
                 <p> <ScrollLink
                   to="sec4" 
                   class="menu-item1"
@@ -185,6 +219,7 @@ function App() {
                   offset={-150}>
                   Our App
                 </ScrollLink></p>
+                <div id="logo"><img src={logo} /></div>
                 <p> <ScrollLink
                   to="sec7"
                   class="menu-item3"
@@ -202,9 +237,9 @@ function App() {
                   Community
                 </ScrollLink></p>
               </div>
-              <div className='col-lg-2 menu-btn'>
+              {/* <div className='col-lg-2 menu-btn'>
                 <button id="headbtn">Contact</button>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -392,19 +427,20 @@ function App() {
         </div>
       </div> */}
 
-          {/* <div className='sec8 section' style={{ padding: '100px 0px' }}> */}
-            {/* <div className='container' style={{ display: 'flex', flexDirection: 'column', gap: '30px', alignItems: 'center' }}>
+
+           <div className='sec8 section' style={{ padding: '100px 0px' }}>
+            <div className='container' style={{ display: 'flex', flexDirection: 'column', gap: '30px', alignItems: 'center' }}>
               <span id="abouttext">Community & Creativity</span>
               <p id='sec4_title'>Where Art  Meets Coffee Culture</p>
               <p id='sec4_desc'>The Coffee Canvas is more than a coffee house; it's a vibrant gallery of creativity and connection. Open mic nights and collaborative events transform our space into a haven for inspiration. Here, the scent of fresh coffee mingles with the aroma of artistic expression, making each visit a journey through art and flavour.</p>
-              <Sec8 /> */}
               {/* <div className='col-lg-2 col-md-2 col-sm-12' style={{ display: 'flex', placeContent: 'space-between', fontSize: '20px', padding: '0px' }}>
                 <p>All</p>
                 <p>Mumbai</p>
                 <p>Delhi</p>
 
               </div> */}
-              {/* <div className='sec8grid'>
+              <Sec8 />
+               {/* <div className='sec8grid'>
                 <img src={sec8img1} className='sec8img' alt='' />
 
                 <img src={sec8img2} className='sec8img' alt='' />
@@ -417,13 +453,11 @@ function App() {
 
                 <img src={sec8img6} className='sec8img' alt='' />
 
-                <div>
-                </div>
               </div> */}
-            {/* </div> */}
-          {/* </div> */}
+            </div>
+          </div>
 
-          <div className='gallery'>
+          {/* <div className='gallery'>
             <Canvas dpr={[1, 1.5]} camera={{ fov: 70, position: [0, 2, 15] }} style={{ width: "100%", height: '600px' }}>
               <color attach="background" args={["#3f2305"]} />
               <fog attach="fog" args={["#191920", 0, 15]} />
@@ -447,7 +481,7 @@ function App() {
               </group>
               <Environment preset="city" />
             </Canvas>
-          </div>
+          </div> */}
 
           <div className='sec9'>
             <div className='container'>
@@ -541,7 +575,7 @@ function App() {
                   </span>
                 </div>
                 <div className='col-lg-5 col-md-5 col-sm-12 coffeecol' style={{ textAlign: '-webkit-center', alignSelf: 'center' }}>
-                  <div id="logo" style={{ filter: 'drop-shadow(2px 2px 2px #000)' }}> <img src={footerlogo} /></div>
+                  <div style={{ filter: 'drop-shadow(2px 2px 2px #000)' }}> <img src={footerlogo} /></div>
                   {/* <Coffee /> */}
                 </div>
               </div>

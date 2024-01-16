@@ -4,6 +4,7 @@ import sec7img1 from '../img/sec7img1.png'
 import sec7img2 from '../img/sec7img2.png'
 import dot from '../img/dot.png'
 import line from '../img/Rectangle 74.svg';
+import Popup from './Popup.js';
 
 const Sec7 = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -72,8 +73,9 @@ const Sec7 = () => {
           <p id='sec4_title'>Flavorful Artistry to Satisfy Your Senses</p>
           <p id='sec4_desc'>Our menu is a canvas of flavor, featuring handcrafted coffees, teas, cold beverages, and delectable pastries. Whether it's breakfast, a midday pick-me-up, or a leisurely afternoon, we have delights for every palate.</p>
           <div style={{ display: 'flex', placeContent: 'space-between' }}>
-            <button id="more_menu">More Menu</button>
-            <p id="sec7check" style={{ alignSelf: 'center', fontFamily: 'Popins', fontWeight: '100', color: '#49545A' }}>Check your survey <i class="arrow up"></i></p>
+            {/* <button id="more_menu">Franchise &#8594;</button> */}
+            <Popup />
+            {/* <p id="sec7check" style={{ alignSelf: 'center', fontFamily: 'Popins', fontWeight: '100', color: '#49545A' }}>Check your survey <i class="arrow up"></i></p> */}
           </div>
         </div>
       </div>

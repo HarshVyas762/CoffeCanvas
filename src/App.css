@@ -12,13 +12,17 @@
 * Browsers: last 4 version
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
 }
 
 body {
-  font-family: 'Rancho', 'Raleway';
+  font-family: 'Rancho', 'Raleway','Red Hat Display';
 }
 
 .element::-webkit-scrollbar{ width: 0 ! important }
@@ -57,34 +61,27 @@ p {
 
 /* sec1 */
 
-.sec1 {
+/* .sec1 {
   background: -o-linear-gradient(left,#fff 70%,#3F2305 0);
   background: -webkit-gradient(linear,left top, right top,color-stop(70%, #fff),color-stop(0, #3F2305));
   background: linear-gradient(90deg,#fff 70%,#3F2305 0);
   /* background-color: #3F2305; */
-}
 
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  place-content: space-between;
+  place-content: center;
   padding: 30px 0px;
   -ms-grid-row-align: center;
   -ms-grid-column-align: center;
+  font-family: 'Red Hat Display';
   place-self: center;
   text-align: center;
 }
 
-#logo {
-  color: var(--Dark, #fff);
-  font-size: 23.97px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 29.963px;
+#logo img{
+  height: 100px;;
   /* 125% */
 }
 
@@ -111,7 +108,9 @@ p {
        -o-transition-duration: 0.3s;
           transition-duration: 0.3s;
   cursor: pointer;
+  font-family: 'Red Hat Display';
   color: #3F2305;
+  font-size: 20px;
 }
 
 /* menu_link_hover */
@@ -122,7 +121,7 @@ p {
   bottom: 0;
   left: 15px;
   width: 60px;
-  height: 1px;
+  height: 2px;
   background: #3F2305;
   -webkit-transform: scaleX(0);
       -ms-transform: scaleX(0);
@@ -156,7 +155,7 @@ p {
   bottom: 0;
   left: 125px;
   width: 60px;
-  height: 3px;
+  height: 2px;
   background: #3F2305;
   -webkit-transform: scaleX(0);
       -ms-transform: scaleX(0);
@@ -190,7 +189,7 @@ p {
   bottom: 0;
   left: 232px;
   width: 40px;
-  height: 3px;
+  height: 2px;
   background: #3F2305;
   -webkit-transform: scaleX(0);
       -ms-transform: scaleX(0);
@@ -224,7 +223,7 @@ p {
   bottom: 0;
   left: 320px;
   width: 75px;
-  height: 3px;
+  height: 2px;
   background: #3F2305;
   -webkit-transform: scaleX(0);
       -ms-transform: scaleX(0);
@@ -295,11 +294,11 @@ p {
 
 /* sec1 */
 
-.sec2{
+/* .sec2{
   background: -o-linear-gradient(left,#fff 70%,#3F2305 0);
   background: -webkit-gradient(linear,left top, right top,color-stop(70%, #fff),color-stop(0, #3F2305));
   background: linear-gradient(90deg,#fff 70%,#3F2305 0);
-}
+} */
 
 /* SEC3 */
 
@@ -913,7 +912,7 @@ p {
   height: 650px;
   border-bottom: 100px solid white;
   background-repeat: no-repeat;
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 
 #carouselExampleFade {
@@ -1085,6 +1084,70 @@ p {
 
 /* Footer */
 
+/* Form */
+@media (min-width: 576px){
+.modal-dialog {
+  max-width: 800px !important;
+}
+}
+
+.form_field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  padding: 0 15px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  padding-bottom: 30px;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  /* margin: 0 120px; */
+  margin-top: 40px;
+}
+
+.form_input {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #EDEDED;
+  gap: 8px;
+  height: 44px;
+}
+
+/* 
+::placeholder{
+  padding-left: 20px;
+} */
+
+#message {
+  height: 134px;
+  padding-top: 15px;
+}
+
+.submit {
+  width: 167px;
+  height: 56px;
+  padding: 14px;
+  border-radius: 100px;
+  gap: 8px;
+  border: 1px solid black;
+  background-color: #000;
+  color: white;
+}
+
+
+/* Form */
 
 /* >1200 */
 
@@ -1352,3 +1415,45 @@ background-size: cover;
 }
 
 /* 800px */
+
+
+
+/* backtotop */
+
+
+#topbutton {
+  display: inline-block;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="68" height="69" viewBox="0 0 68 69" fill="none" transform="rotate(90)"><circle cx="33.7715" cy="34.392" r="33.6571" fill="white"/><path d="M39.0857 43.2485L30.2286 34.3914L39.0857 25.5342" fill="white"/><path d="M39.0857 43.2485L30.2286 34.3914L39.0857 25.5342" stroke="black" stroke-width="1.77143" stroke-miterlimit="10" stroke-linecap="square"/></svg>');
+  box-shadow: 0px 0px 0px 0px #000;
+  position: absolute;
+  height: 72px;
+  width: 72px;
+  text-align: center;
+  border-radius: 10em;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  z-index: 1000;
+  opacity: 0;
+}
+
+
+#topbutton:hover {
+  cursor: pointer;
+  border: 2px solid #934c12;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="68" height="69" viewBox="0 0 68 69" fill="none" transform="rotate(90)"><circle cx="33.7715" cy="34.392" r="33.6571" fill="white"/><path d="M39.0857 43.2485L30.2286 34.3914L39.0857 25.5342" fill="white"/><path d="M39.0857 43.2485L30.2286 34.3914L39.0857 25.5342" stroke="brown" stroke-width="1.77143" stroke-miterlimit="10" stroke-linecap="square"/></svg>');
+}
+
+@media(max-width:700px){
+  #topbutton {
+    width: 48px;
+    height: 48px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 68 69" fill="none" transform="rotate(90)"><circle cx="33.7715" cy="34.392" r="33.6571" fill="white"/><path d="M39.0857 43.2485L30.2286 34.3914L39.0857 25.5342" fill="white"/><path d="M39.0857 43.2485L30.2286 34.3914L39.0857 25.5342" stroke="black" stroke-width="1.77143" stroke-miterlimit="10" stroke-linecap="square"/></svg>');
+ }
+}
+
+
+
+/* backtotop */
