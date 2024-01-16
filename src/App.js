@@ -528,11 +528,11 @@ function App() {
                               <img src={line} alt='' />
                               <p id="testname"><span id="name"><b>James</b></span>, Coffee Connoisseur</p>
                             </div>
-                            <span className='sec9_num1'>02</span><span className='sec9_num2'>/03</span>
+                            <p id='sec9_nuumdiv'><span className='sec9_num1'>02</span><span className='sec9_num2'>/03</span></p>
                           </div>
                         </div>
                         <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
-                          <img src={test2} id="test1" alt='' />
+                          <img src={test1} id="test1" alt='' />
                         </div>
                       </div>
                     </div>
@@ -548,11 +548,11 @@ function App() {
                               <img src={line} alt='' />
                               <p id="testname"><span id="name"><b>Emma</b></span>, Espresso Aficionado</p>
                             </div>
-                            <span className='sec9_num1'>03</span><span className='sec9_num2'>/03</span>
-                          </div>
+                            <p id='sec9_nuumdiv'><span className='sec9_num1'>03</span><span className='sec9_num2'>/03</span></p>
+                                                      </div>
                         </div>
                         <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
-                          <img src={img3} id="test1" alt='' />
+                          <img src={test1} id="test1" alt='' />
                         </div>
                       </div>
                     </div>
