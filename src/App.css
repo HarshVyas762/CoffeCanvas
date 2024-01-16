@@ -1344,12 +1344,12 @@ padding-top: 100px;
   #sec4_boxtitle {
     font-size: 22px;
   }
-
+/* 
   .sec2 {
     background: -o-linear-gradient(left,#fff 70%,#3F2305 0);
     background: -webkit-gradient(linear,left top, right top,color-stop(70%, #fff),color-stop(0, #3F2305));
     background: linear-gradient(90deg,#fff 70%,#3F2305 0);
-}
+} */
 
   .sec2_title {
     font-size: 22px;
@@ -1440,8 +1440,8 @@ padding-top: 100px;
   .sec1 {
     width: -webkit-fill-available;
     position: fixed;
-    background-color: #3F2305;
-    z-index: 99999999;
+    /* background-color: #3F2305;
+    z-index: 99999999; */
   }
 
 .footmenu{
