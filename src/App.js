@@ -21,9 +21,9 @@ import line from './img/Rectangle 74.svg';
 import test1 from './img/test1.png'
 import test2 from './img/test2.jpg'
 import quotes from './img/quotes.svg'
-import soc1 from './img/soc1.png'
-import soc2 from './img/soc2.png'
-import soc3 from './img/soc3.png'
+import soc1 from './img/soc1.svg'
+import soc2 from './img/soc2.svg'
+import soc3 from './img/soc3.svg'
 import soc4 from './img/soc4.png'
 import soc5 from './img/soc5.png'
 import Sidebar from './Sidebar';
@@ -47,6 +47,15 @@ import image6 from "./img/Frame6.webp";
 import image7 from "./img/Frame7.webp";
 import image8 from "./img/Frame8.webp";
 import image9 from "./img/Frame9.webp";
+import Sl1 from './Sliderimg/Sl1.jpg'
+import Sl2 from './Sliderimg/Sl2.png'
+import Sl3 from './Sliderimg/Sl3.png'
+import Sl4 from './Sliderimg/Sl4.png'
+import Sl5 from './Sliderimg/Sl5.png'
+import Sl6 from './Sliderimg/Sl6.png'
+import Sl7 from './Sliderimg/Sl7.png'
+import Sl8 from './Sliderimg/Sl8.png'
+import Sl9 from './Sliderimg/Sl9.png'
 
 const images = [
   // Front
@@ -121,12 +130,12 @@ function Pages() {
   const { width } = useThree((state) => state.viewport)
   return (
     <>
-      <Page position={[-width * 1, 0, 0]} urls={[trip1, trip2, trip3]} />
-      <Page position={[width * 0, 0, 0]} urls={[img1, img2, img3]} />
-      <Page position={[width * 1, 0, 0]} urls={[img4, img5, img6]} />
-      <Page position={[width * 2, 0, 0]} urls={[trip1, trip2, trip3]} />
-      <Page position={[width * 3, 0, 0]} urls={[img1, img2, img3]} />
-      <Page position={[width * 4, 0, 0]} urls={[img4, img5, img6]} />
+      <Page position={[-width * 1, 0, 0]} urls={[Sl1, Sl2, Sl3]} />
+      <Page position={[width * 0, 0, 0]} urls={[Sl4, Sl5, Sl6]} />
+      <Page position={[width * 1, 0, 0]} urls={[Sl7, Sl8, Sl9]} />
+      <Page position={[width * 2, 0, 0]} urls={[Sl1, Sl2, Sl3]} />
+      <Page position={[width * 3, 0, 0]} urls={[Sl4, Sl5, Sl6]} />
+      <Page position={[width * 4, 0, 0]} urls={[Sl7, Sl8, Sl9]} />
     </>
   )
 }
@@ -251,12 +260,12 @@ function App() {
                     <Pages />
                   </Scroll>
                   <Scroll html>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '-75vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black' }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '25vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black' }}>Canvas</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '125vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black' }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '225vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black' }}>Canvas</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '325vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black' }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '425vw', fontSize: '5rem', color: 'white', textShadow: '6px 9px 5px black' }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '-75vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black',fontFamily:'Raleway' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '25vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black' }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '125vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '225vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black' }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '325vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '425vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black' }}>Canvas</h1>
                   </Scroll>
                 </ScrollControls>
                 <Preload />
@@ -431,8 +440,8 @@ function App() {
            <div className='sec8 section' style={{ padding: '100px 0px' }}>
             <div className='container' style={{ display: 'flex', flexDirection: 'column', gap: '30px', alignItems: 'center' }}>
               <span id="abouttext">Community & Creativity</span>
-              <p id='sec4_title'>Where Art  Meets Coffee Culture</p>
-              <p id='sec4_desc'>The Coffee Canvas is more than a coffee house; it's a vibrant gallery of creativity and connection. Open mic nights and collaborative events transform our space into a haven for inspiration. Here, the scent of fresh coffee mingles with the aroma of artistic expression, making each visit a journey through art and flavour.</p>
+              <p id='sec4_title'>Where Art &nbsp; Meets Coffee Culture</p>
+              <p id='sec4_desc' style={{textAlign:'center'}}>The Coffee Canvas is more than a coffee house; it's a vibrant gallery of creativity and connection. Open mic nights and collaborative events transform our space into a haven for inspiration. Here, the scent of fresh coffee mingles with the aroma of artistic expression, making each visit a journey through art and flavour.</p>
               {/* <div className='col-lg-2 col-md-2 col-sm-12' style={{ display: 'flex', placeContent: 'space-between', fontSize: '20px', padding: '0px' }}>
                 <p>All</p>
                 <p>Mumbai</p>
@@ -486,7 +495,7 @@ function App() {
           <div className='sec9'>
             <div className='container'>
               <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <p id="sec4_title" style={{ textAlign: 'left' }}>Where Art  Meets Coffee Culture</p>
+                <p id="sec4_title" style={{ textAlign: 'left' }}>What They Say:</p>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div className='container'>
@@ -499,6 +508,7 @@ function App() {
                               <img src={line} alt='' />
                               <p id="testname"><span id="name"><b>Asha</b></span>, Coffee Fan</p>
                             </div>
+                            <p id='sec9_nuumdiv'><span className='sec9_num1'>01</span><span className='sec9_num2'>/03</span></p>
                           </div>
                         </div>
                         <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
@@ -518,6 +528,7 @@ function App() {
                               <img src={line} alt='' />
                               <p id="testname"><span id="name"><b>James</b></span>, Coffee Connoisseur</p>
                             </div>
+                            <span className='sec9_num1'>02</span><span className='sec9_num2'>/03</span>
                           </div>
                         </div>
                         <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
@@ -537,6 +548,7 @@ function App() {
                               <img src={line} alt='' />
                               <p id="testname"><span id="name"><b>Emma</b></span>, Espresso Aficionado</p>
                             </div>
+                            <span className='sec9_num1'>03</span><span className='sec9_num2'>/03</span>
                           </div>
                         </div>
                         <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
@@ -580,40 +592,33 @@ function App() {
                 </div>
               </div>
               <div className='div2'>
-                <div className='col-lg-4 col-md-12 col-sm-12 div2col1' style={{ justifyContent: 'center', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <div className='col-lg-4 col-md-12 col-sm-12 div2col1' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                   <h5 id='subtitle'>TheCoffeeCanvas</h5>
-                  <p className='subtext'>High level experience in web design and development knowledge, producing quality work.</p>
+                  <p className='subtext'>Where Every Sip is a Work of Art</p>
                 </div>
                 <div className='col-lg-2  col-md-4 col-sm-12 div2col2'>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                    <p style={{ fontSize: '18px' }}><b>Use Cases</b></p>
-                    <p className='subtext'>Web-designers</p>
-                    <p className='subtext'>Marketers</p>
-                    <p className='subtext'>Small Business</p>
-                    <p className='subtext'>Website Builder</p>
+                    <p style={{ fontSize: '18px',fontFamily:'Raleway' }}><b>the Coffee Canvas</b></p>
+                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>Web-designers</p>
+                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>Marketers</p>
+                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>Small Business</p>
+                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>Website Builder</p>
                   </div>
                 </div>
-                <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
+                {/* <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                     <p style={{ fontSize: '18px' }}><b>Company</b></p>
-                    <p className='subtext'>About Us</p>
-                    <p className='subtext'>Careers</p>
-                    <p className='subtext'>FAQs</p>
-                    <p className='subtext'>Terms</p>
-                    <p className='subtext'>Contact Us</p>
                   </div>
-                </div>
+                </div> */}
 
 
                 <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
-                  <p>Follow us</p>
+                  <p style={{fontFamily:'Raleway',fontSize:'18px', fontWeight:'bolder'}}>Follow us</p>
                   <br></br>
                   <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
                     <img src={soc1} className='socimg' alt='' />
                     <img src={soc2} className='socimg' alt='' />
                     <img src={soc3} className='socimg' alt='' />
-                    <img src={soc4} className='socimg' alt='' />
-                    <img src={soc5} className='socimg' alt='' />
                   </div>
                 </div>
               </div>

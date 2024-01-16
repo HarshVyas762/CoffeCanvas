@@ -13,7 +13,7 @@ import '../App.css'
 function JustifiedExample() {
   return (
     <Tabs defaultActiveKey="profile" id="justify-tab-example" className="mb-3 fade" style={{ border: 'none', gap: "30px", opacity: '1', overflow: 'hidden' }}>
-      <Tab eventKey="profile" t title="All">
+      <Tab eventKey="profile" className="sec8title" title="All">
         <TabContent>
           <div className='sec8grid'>
             <img src={sec8img1} className='sec8img' alt='' />
@@ -26,7 +26,7 @@ function JustifiedExample() {
           </div>
         </TabContent>
       </Tab>
-      <Tab eventKey="home" title="Mumbai">
+      <Tab eventKey="home" className="sec8title" title="Mumbai">
         <TabContent>
           <div className='sec8grid'>
             <img src={sec8img1} className='sec8img' alt='' />
@@ -36,7 +36,7 @@ function JustifiedExample() {
           </div>
         </TabContent>
       </Tab>
-      <Tab eventKey="longer-tab" title="Delhi">
+      <Tab eventKey="longer-tab" className="sec8title" title="Delhi">
         <TabContent>
           <div className='sec8grid'>
             <img src={sec8img1} className='sec8img' alt='' />

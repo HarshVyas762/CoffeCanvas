@@ -13,8 +13,8 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
   -ms-scroll-chaining: none;
@@ -300,6 +300,14 @@ p {
   background: linear-gradient(90deg,#fff 70%,#3F2305 0);
 } */
 
+.sec2_desc{
+  font-family: 'Raleway';
+  font-size: 18px;
+  width: 250px;
+  font-weight: 400;
+  align-self: center;
+}
+
 /* SEC3 */
 
 .sec3 {
@@ -395,7 +403,7 @@ p {
 #sec4_title {
   color: var(--Dark, #3F2305);
   font-family: Rancho;
-  font-size: 40px;
+  font-size: 54px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -404,10 +412,10 @@ p {
 #sec4_desc {
   color: var(--Small-Title, #555);
   font-family: Raleway;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 25px;
   /* 166.667% */
 }
 
@@ -853,6 +861,12 @@ p {
   background-repeat: no-repeat;
 }
 
+.nav-tabs .nav-link{
+  font-family: 'Rancho';
+  font-weight: 400;
+  font-size: 30px !important;
+}
+
 .sec8grid {
   display: -ms-grid;
   display: grid;
@@ -907,6 +921,23 @@ p {
 
 /* SEC9 */
 
+.sec9_num1{
+  font-family: 'Rancho';
+  font-weight: 400;
+  font-size: 72px;
+}
+
+#sec9_nuumdiv{
+  margin-top: 130px;
+}
+
+.sec9_num2{
+  font-family: 'Rancho';
+  font-weight: 400;
+  font-size: 42px;
+}
+
+
 .sec9 {
   background: url('./img/sec9bg.png');
   height: 650px;
@@ -946,6 +977,9 @@ p {
   font-family: Raleway;
   font-size: 24px;
   width: 350px;
+  font-weight: 300;
+  line-height: 44px;
+  margin-left: 60px;
 }
 
 #testname {
@@ -1030,7 +1064,7 @@ p {
   padding-top: clamp(40px, 50%, 70px);
   background-repeat: no-repeat;
   color :#F2EAD3;
-  margin-top: clamp(100px, 82%, 170px);
+  margin-top: clamp(70px, 82%, 100px);
   background-size: cover;
 }
 
@@ -1062,8 +1096,8 @@ p {
 }
 
 .subtext {
-  font-family: Roboto;
-  font-size: 16px;
+  font-family: Raleway;
+  font-size: 24px;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0em;
@@ -1204,6 +1238,15 @@ background-size: cover;
 /* 800px */
 
 @media(max-width:700px) {
+
+
+#sec9_numdiv{
+  display: none;
+}
+
+#testdesc {
+  margin-left: 0px;
+}
 
   #logo img{
   width: 200px;
@@ -1392,6 +1435,12 @@ background-size: cover;
     background-color: #3F2305;
     z-index: 99999999;
   }
+
+.footmenu{
+font-family: 'Raleway' !important;
+font-size: 14px !important;
+font-weight: 400 !important;
+}
 
   .menu-link {
     display: none;
