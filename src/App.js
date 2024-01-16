@@ -47,15 +47,15 @@ import image6 from "./img/Frame6.webp";
 import image7 from "./img/Frame7.webp";
 import image8 from "./img/Frame8.webp";
 import image9 from "./img/Frame9.webp";
-import Sl1 from './Sliderimg/Sl1.jpg'
-import Sl2 from './Sliderimg/Sl2.png'
-import Sl3 from './Sliderimg/Sl3.png'
-import Sl4 from './Sliderimg/Sl4.png'
-import Sl5 from './Sliderimg/Sl5.png'
-import Sl6 from './Sliderimg/Sl6.png'
-import Sl7 from './Sliderimg/Sl7.png'
-import Sl8 from './Sliderimg/Sl8.png'
-import Sl9 from './Sliderimg/Sl9.png'
+import Sl1 from './Sliderimg/Sl1.webp'
+import Sl2 from './Sliderimg/Sl2.webp'
+import Sl3 from './Sliderimg/Sl3.webp'
+import Sl4 from './Sliderimg/Sl4.webp'
+import Sl5 from './Sliderimg/Sl5.webp'
+import Sl6 from './Sliderimg/Sl6.webp'
+import Sl7 from './Sliderimg/Sl7.webp'
+import Sl8 from './Sliderimg/Sl8.webp'
+import Sl9 from './Sliderimg/Sl9.webp'
 
 const images = [
   // Front
@@ -437,7 +437,7 @@ function App() {
       </div> */}
 
 
-           <div className='sec8 section' style={{ padding: '100px 0px' }}>
+           <div className='sec8 section'>
             <div className='container' style={{ display: 'flex', flexDirection: 'column', gap: '30px', alignItems: 'center' }}>
               <span id="abouttext">Community & Creativity</span>
               <p id='sec4_title'>Where Art &nbsp; Meets Coffee Culture</p>
@@ -587,7 +587,7 @@ function App() {
                   </span>
                 </div>
                 <div className='col-lg-5 col-md-5 col-sm-12 coffeecol' style={{ textAlign: '-webkit-center', alignSelf: 'center' }}>
-                  <div style={{ filter: 'drop-shadow(2px 2px 2px #000)' }}> <img src={footerlogo} /></div>
+                  <div style={{ filter: 'drop-shadow(2px 2px 2px #000)' }}> <img id='footlogo' src={footerlogo} /></div>
                   {/* <Coffee /> */}
                 </div>
               </div>
