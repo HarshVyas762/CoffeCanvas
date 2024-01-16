@@ -130,7 +130,7 @@ function Pages() {
   const { width } = useThree((state) => state.viewport)
   return (
     <>
-      <Page position={[-width * 1, 0, 0]} urls={[Sl1, Sl2, Sl3]} />
+      <Page position={[width * 1, 0, 0]} urls={[Sl1, Sl2, Sl3]} />
       <Page position={[width * 0, 0, 0]} urls={[Sl4, Sl5, Sl6]} />
       <Page position={[width * 1, 0, 0]} urls={[Sl7, Sl8, Sl9]} />
       <Page position={[width * 2, 0, 0]} urls={[Sl1, Sl2, Sl3]} />
