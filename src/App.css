@@ -1537,3 +1537,73 @@ font-weight: 400 !important;
 
 
 /* backtotop */
+
+
+/* imgae div */
+
+.imagediv{
+  display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+}
+
+.galleryimg{
+  width: 100%;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .imagediv {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .imagediv {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(9, 1fr);
+  }
+}
+
+
+ #Gimg2, #Gimg3, #Gimg4, #Gimg5, #Gimg6, #Gimg7, #Gimg8 {
+  width: 100%;
+  height: auto;
+  filter: grayscale(1) brightness(70%);
+  transition: filter 0.5s ease-in-out;
+}
+
+ #Gimg2:hover, #Gimg3:hover, #Gimg4:hover, #Gimg5:hover, #Gimg6:hover, #Gimg7:hover, #Gimg8:hover {
+  filter: grayscale(0) brightness(100%);
+  background-position: 100% 0;
+}
+
+.imgcont{
+  position: relative;
+  overflow: hidden;
+}
+
+.imgcont::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000066;
+  filter: grayscale(1) brightness(27%);
+  transition: filter 0.3s ease-in-out, transform 0.8s ease-in-out;
+  transform: scaleX(1);
+  transform-origin: top;
+}
+
+.imgcont:hover::before {
+  filter: grayscale(0) brightness(100%);
+  transform: scaleX(0); /* Fully visible on hover */
+}
+
+
+/* image div */

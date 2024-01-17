@@ -56,7 +56,6 @@ import Sl6 from './Sliderimg/Sl6.webp'
 import Sl7 from './Sliderimg/Sl7.webp'
 import Sl8 from './Sliderimg/Sl8.webp'
 import Sl9 from './Sliderimg/Sl9.webp'
-import GalleryComponent from './component/Cafegallery'
 
 const images = [
   // Front
@@ -203,18 +202,18 @@ function App() {
       ) : (
         <>
 
-<button
-      id="topbutton"
-      style={{ opacity: isVisible ? 1 : 0 }}
-      onClick={scrollToTop} />
+          <button
+            id="topbutton"
+            style={{ opacity: isVisible ? 1 : 0 }}
+            onClick={scrollToTop} />
 
           <div className='sec1'>
             <div className='container nav'>
               <Sidebar />
               {/* <div className='col-lg-3' id="logo"><img src={logo} /></div> */}
-              <div className='col-lg-8 menu-link' style={{ gap: '50px', alignItems: 'center', color: 'white',placeContent:'center' }}>
+              <div className='col-lg-8 menu-link' style={{ gap: '50px', alignItems: 'center', color: 'white', placeContent: 'center' }}>
                 <p> <ScrollLink
-                  to="sec4" 
+                  to="sec4"
                   class="menu-item1"
                   smooth={true}
                   duration={500}
@@ -261,7 +260,7 @@ function App() {
                     <Pages />
                   </Scroll>
                   <Scroll html>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '-75vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black',fontFamily:'Raleway' }}>Coffee</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '-75vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black', fontFamily: 'Raleway' }}>Coffee</h1>
                     <h1 style={{ position: 'absolute', top: '40vh', left: '25vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black' }}>Canvas</h1>
                     <h1 style={{ position: 'absolute', top: '40vh', left: '125vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black' }}>Coffee</h1>
                     <h1 style={{ position: 'absolute', top: '40vh', left: '225vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black' }}>Canvas</h1>
@@ -438,11 +437,11 @@ function App() {
       </div> */}
 
 
-           <div className='sec8 section'>
+          <div className='sec8 section'>
             <div className='container' style={{ display: 'flex', flexDirection: 'column', gap: '30px', alignItems: 'center' }}>
               <span id="abouttext">Community & Creativity</span>
               <p id='sec4_title'>Where Art &nbsp; Meets Coffee Culture</p>
-              <p id='sec4_desc' style={{textAlign:'center'}}>The Coffee Canvas is more than a coffee house; it's a vibrant gallery of creativity and connection. Open mic nights and collaborative events transform our space into a haven for inspiration. Here, the scent of fresh coffee mingles with the aroma of artistic expression, making each visit a journey through art and flavour.</p>
+              <p id='sec4_desc' style={{ textAlign: 'center' }}>The Coffee Canvas is more than a coffee house; it's a vibrant gallery of creativity and connection. Open mic nights and collaborative events transform our space into a haven for inspiration. Here, the scent of fresh coffee mingles with the aroma of artistic expression, making each visit a journey through art and flavour.</p>
               {/* <div className='col-lg-2 col-md-2 col-sm-12' style={{ display: 'flex', placeContent: 'space-between', fontSize: '20px', padding: '0px' }}>
                 <p>All</p>
                 <p>Mumbai</p>
@@ -450,7 +449,7 @@ function App() {
 
               </div> */}
               <Sec8 />
-               {/* <div className='sec8grid'>
+              {/* <div className='sec8grid'>
                 <img src={sec8img1} className='sec8img' alt='' />
 
                 <img src={sec8img2} className='sec8img' alt='' />
@@ -491,6 +490,21 @@ function App() {
               </group>
               <Environment preset="city" />
             </Canvas>
+          </div> */}
+
+          {/* <div className='container'>
+            <div className='section'>
+              <div className='imagediv'>
+              <div className='imgcont'><img src={Sl1} class='galleryimg' id="Gimg1" /></div>
+              <div className='imgcont'><img src={Sl2} class='galleryimg' id="Gimg1" /></div>
+              <div className='imgcont'><img src={Sl3} class='galleryimg' id="Gimg1" /></div>
+              <div className='imgcont'><img src={Sl4} class='galleryimg' id="Gimg1" /></div>
+              <div className='imgcont'><img src={Sl5} class='galleryimg' id="Gimg1" /></div>
+              <div className='imgcont'><img src={Sl6} class='galleryimg' id="Gimg1" /></div>
+              <div className='imgcont'><img src={Sl7} class='galleryimg' id="Gimg1" /></div>
+              <div className='imgcont'><img src={Sl8} class='galleryimg' id="Gimg1" /></div>
+              </div>
+            </div>
           </div> */}
 
           <div className='sec9'>
@@ -550,7 +564,7 @@ function App() {
                               <p id="testname"><span id="name"><b>Emma</b></span>, Espresso Aficionado</p>
                             </div>
                             <p id='sec9_nuumdiv'><span className='sec9_num1'>03</span><span className='sec9_num2'>/03</span></p>
-                                                      </div>
+                          </div>
                         </div>
                         <div className='col-lg-4 col-md-4 col-sm-12 sec9col2'>
                           <img src={test1} id="test1" alt='' />
@@ -579,7 +593,7 @@ function App() {
                   <p id="footer_title">Visit Us</p>
                   <p id="footer_desc">Where every visit is a masterpiece. For coffee enthusiasts and curious souls alike, our team is here to guide you through a world of flavour and design.</p>
                   <span id="footer_desc">Hours of Operation:
-                    <ul style={{display:'flex',flexDirection:'column'}}>
+                    <ul style={{ display: 'flex', flexDirection: 'column' }}>
                       <li>Monday to Friday: 7:00 AM - 8:00 PM</li>
                       <li>Saturday and Sunday: 8:00 AM - 7:00 PM</li>
                     </ul>
@@ -597,11 +611,11 @@ function App() {
                 </div>
                 <div className='col-lg-2  col-md-4 col-sm-12 div2col2'>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                    <p style={{ fontSize: '18px',fontFamily:'Raleway' }}><b>the Coffee Canvas</b></p>
-                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>About us</p>
-                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>Our App</p>
-                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>Menu</p>
-                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>Community</p>
+                    <p style={{ fontSize: '18px', fontFamily: 'Raleway' }}><b>the Coffee Canvas</b></p>
+                    <p className='footmenu' style={{ fontFamily: 'Raleway', fontSize: '14px' }}>About us</p>
+                    <p className='footmenu' style={{ fontFamily: 'Raleway', fontSize: '14px' }}>Our App</p>
+                    <p className='footmenu' style={{ fontFamily: 'Raleway', fontSize: '14px' }}>Menu</p>
+                    <p className='footmenu' style={{ fontFamily: 'Raleway', fontSize: '14px' }}>Community</p>
                   </div>
                 </div>
                 {/* <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
@@ -612,7 +626,7 @@ function App() {
 
 
                 <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
-                  <p style={{fontFamily:'Raleway',fontSize:'18px', fontWeight:'bolder'}}>Follow us</p>
+                  <p style={{ fontFamily: 'Raleway', fontSize: '18px', fontWeight: 'bolder' }}>Follow us</p>
                   <br></br>
                   <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
                     <img src={soc1} className='socimg' alt='' />
