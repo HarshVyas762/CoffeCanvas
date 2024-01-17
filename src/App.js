@@ -56,6 +56,7 @@ import Sl6 from './Sliderimg/Sl6.webp'
 import Sl7 from './Sliderimg/Sl7.webp'
 import Sl8 from './Sliderimg/Sl8.webp'
 import Sl9 from './Sliderimg/Sl9.webp'
+import GalleryComponent from './component/Cafegallery'
 
 const images = [
   // Front
@@ -574,14 +575,12 @@ function App() {
           <div className='footer'>
             <div className='container'>
               <div style={{ display: 'flex', alignItems: 'flex-start', placeContent: 'space-between', flexWrap: 'wrap' }}>
-                <div className='col-lg-5 col-md-5 col-sm-12 div1col1' style={{ display: 'flex', gap: '20px', flexDirection: 'column' }}>
+                <div className='col-lg-7 col-md-7 col-sm-12 div1col1' style={{ display: 'flex', gap: '20px', flexDirection: 'column' }}>
                   <p id="footer_title">Visit Us</p>
                   <p id="footer_desc">Where every visit is a masterpiece. For coffee enthusiasts and curious souls alike, our team is here to guide you through a world of flavour and design.</p>
                   <span id="footer_desc">Hours of Operation:
-                    <ul>
-                      <br></br>
+                    <ul style={{display:'flex',flexDirection:'column'}}>
                       <li>Monday to Friday: 7:00 AM - 8:00 PM</li>
-                      <br></br>
                       <li>Saturday and Sunday: 8:00 AM - 7:00 PM</li>
                     </ul>
                   </span>
@@ -592,17 +591,17 @@ function App() {
                 </div>
               </div>
               <div className='div2'>
-                <div className='col-lg-4 col-md-12 col-sm-12 div2col1' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <div className='col-lg-4 col-md-12 col-sm-12 div2col1' style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   <h5 id='subtitle'>TheCoffeeCanvas</h5>
                   <p className='subtext'>Where Every Sip is a Work of Art</p>
                 </div>
                 <div className='col-lg-2  col-md-4 col-sm-12 div2col2'>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                     <p style={{ fontSize: '18px',fontFamily:'Raleway' }}><b>the Coffee Canvas</b></p>
-                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>Web-designers</p>
-                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>Marketers</p>
-                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>Small Business</p>
-                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>Website Builder</p>
+                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>About us</p>
+                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>Our App</p>
+                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>Menu</p>
+                    <p className='footmenu' style={{fontFamily:'Raleway',fontSize:'14px'}}>Community</p>
                   </div>
                 </div>
                 {/* <div className='col-lg-2 col-md-4 col-sm-12 div2col2'>
