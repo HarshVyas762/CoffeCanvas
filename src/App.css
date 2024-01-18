@@ -513,6 +513,13 @@ p {
   margin-top: 100px;
 }
 
+@media (min-width:1300px){
+.sec5maindiv{
+    margin: auto !important;
+    width: 78em !important;
+}
+}
+
 #sec5_boxtitle {
   color: var(--Dark, #3F2305);
   font-family: Rancho;
@@ -1227,6 +1234,11 @@ ul>li:before {
 
 @media (min-width:700px) and (max-width:1100px) {
 
+  .sec5 {
+    background: url(http://localhost:3000/static/media/sec5bg.7b538f5d00544a712e2f.png);
+    background-size: cover;
+}
+
   #sec5img {
     width: 100%;
   }
@@ -1352,7 +1364,7 @@ ul>li:before {
   }
 
   #abouttext {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   #more_menu {
@@ -1575,21 +1587,28 @@ ul>li:before {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
   .galleryimg {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
+  }
+  .imagediv{
+    justify-content: center;
   }
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
   .galleryimg {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
   }  
+
+  .imagediv{
+    justify-content: center;
+  }
 }
 
 
