@@ -860,6 +860,7 @@ p {
   background: url('./img/sec8bg.png');
   background-repeat: no-repeat;
   padding: 100px 0px;
+  background-attachment: fixed;
 }
 
 .nav-tabs .nav-link{
@@ -1543,7 +1544,7 @@ font-weight: 400 !important;
 
 .imagediv{
   display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 1fr);
             gap: 20px;
 }

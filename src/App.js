@@ -56,7 +56,6 @@ import Sl6 from './Sliderimg/Sl6.webp'
 import Sl7 from './Sliderimg/Sl7.webp'
 import Sl8 from './Sliderimg/Sl8.webp'
 import Sl9 from './Sliderimg/Sl9.webp'
-
 const images = [
   // Front
   { position: [0, 0, 1.5], rotation: [0, 0, 0], url: image1 },
