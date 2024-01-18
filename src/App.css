@@ -1250,6 +1250,11 @@ ul>li:before {
     -ms-flex-direction: row;
     flex-direction: row;
   }
+
+  #footlogo{
+    width: 450px;
+  }
+  
 }
 
 /* 1100px to 800px */
@@ -1257,6 +1262,11 @@ ul>li:before {
 /* 800px */
 
 @media(max-width:700px) {
+
+  #footlogo{
+    width: 250px;
+  }
+  
 
   #sec9_nuumdiv {
     display: none;
@@ -1505,7 +1515,6 @@ ul>li:before {
 
 }
 
-
 /* 800px */
 
 #topbutton {
@@ -1554,30 +1563,33 @@ ul>li:before {
 /* imgae div */
 
 .imagediv {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .galleryimg {
-  width: 100%;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
 
 
 @media screen and (max-width: 1200px) {
-  .imagediv {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+  .galleryimg {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
   }
 }
 
 
 @media screen and (max-width: 700px) {
-  .imagediv {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 1fr);
-  }
+  .galleryimg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }  
 }
 
 
