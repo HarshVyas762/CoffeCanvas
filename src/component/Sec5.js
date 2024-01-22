@@ -3,10 +3,10 @@ import '../App.css';
 import artistic from '../img/icon-2_1920X 1 (1).png';
 import cultural from '../img/icon-4_1920X 1.png';
 import sec5img from '../img/sec5img.png';
-import worldsbest from './img/worldbest.svg'
-import baristas from './img/baristS.svg'
-import freshness from './img/freshness.svg'
-import synphony from './img/symphony.svg'
+import worldsbest from '../img/worldbest.svg'
+import baristas from '../img/baristS.svg'
+import freshness from '../img/freshness.svg'
+import synphony from '../img/symphony.svg'
 
 
 
