@@ -49,7 +49,7 @@ const Sec6 = () => {
           </div>
           <p id='sec4_title'>Never Run Out of Your Favorite Blend</p>
           <p id='sec4_desc'>Don't miss out on the opportunity to elevate your daily coffee ritual. Download the Coffee Subscription App today and savor the convenience, the flavors, and the artistry that The Coffee Canvas has to offer. It's coffee, your way, and it's just a tap away.</p>
-          <button id='subscribe'>Subscribe</button>
+          <button id='subscribe'>Coming Soon</button>
         </div>
         <div className='col-lg-3 col-md-5 col-sm-12 sec6col2' style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           <div style={{ overflow: 'hidden' }}>
