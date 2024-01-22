@@ -260,12 +260,12 @@ function App() {
                     <Pages />
                   </Scroll>
                   <Scroll html>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '-75vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black', fontFamily: 'Raleway' }}>Coffee</h1>
+                    {/* <h1 style={{ position: 'absolute', top: '40vh', left: '-75vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black', fontFamily: 'Raleway' }}>Coffee</h1>
                     <h1 style={{ position: 'absolute', top: '40vh', left: '25vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black' }}>Canvas</h1>
                     <h1 style={{ position: 'absolute', top: '40vh', left: '125vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black' }}>Coffee</h1>
                     <h1 style={{ position: 'absolute', top: '40vh', left: '225vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black' }}>Canvas</h1>
                     <h1 style={{ position: 'absolute', top: '40vh', left: '325vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black' }}>Coffee</h1>
-                    <h1 style={{ position: 'absolute', top: '40vh', left: '425vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black' }}>Canvas</h1>
+                    <h1 style={{ position: 'absolute', top: '40vh', left: '425vw', fontSize: '5rem', color: 'black', textShadow: '6px 9px 5px black' }}>Canvas</h1> */}
                   </Scroll>
                 </ScrollControls>
                 <Preload />
