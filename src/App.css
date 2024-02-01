@@ -870,7 +870,7 @@ p {
   background: url('./img/sec8bg.png');
   background-repeat: no-repeat;
   padding: 100px 0px;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 .nav-tabs .nav-link {
